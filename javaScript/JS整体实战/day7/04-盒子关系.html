@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+        .middle {
+            height: 400px;
+            width: 400px;
+            /*background-image : url("picture/wrong.png");*/
+        }
+        .large{
+            height: 800px;
+            width: 800px;
+            /*background-image: url("picture/wrong.png");*/
+        }
+        .small{
+            width: 200px;
+            height: 200px;
+            /*background-image: url("picture/wrong.png");*/
+        }
+    </style>
+</head>
+<body>
+<div class="picture">
+    <div class="small">
+        <img class="small" src="picture/wrong.png">
+    </div>
+<!--    <span>xxx</span>-->
+    <div class="middle">
+        <img class="middle" src="picture/wrong.png">
+    </div>
+<!--    <span>xxx</span>-->
+    <div class="large">
+        <img class="large" src="picture/wrong.png">
+    </div>
+</div>
+<script>
+    const small = document.querySelector(".small")
+    small.addEventListener("mouseover",function (e){
+        if(e.target.tagName === "IMG"){
+            alert("...")
+        }
+    })
+
+</script>
+
+</body>
+</html>

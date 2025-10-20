@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<input type="text">
+<div id="test">
+    good boy
+    <div id="inner">xxx</div>
+</div>
+<div id="xxx">
+    good boy
+</div>
+<input type="checkbox" class="check" name="check">我同意
+<div></div>
+<input type="submit" value="提交">
+<input type="button" value="按钮">
+<input type="file" value="选择要上传的文件">
+<input type="image" src="picture/small.png" alt="Submit">
+<input type="passwd" placeholder="输入密码">
+<div class="radio1">
+<!--    <input type="radio" name="gender" value="male">男-->
+<!--    <input type="radio" name="gender" value="female">女-->
+<!--    少了name属性后，就不能正常单选了-->
+<!--    在这个例子中，由于第二个 <input type="radio"> 元素没有 name 属性，它不会被视为与第一个单选按钮属于同一个组。因此，用户可以“选择”两个选项，尽管它们看起来像是单选按钮。-->
+
+<!--为了正确实现单选功能，你应该为所有属于同一组的单选按钮指定相同的 name 属性值：-->
+<!--    一个单选按钮组由具有相同 name 属性的单选按钮组成。一旦单选按钮组被建立，选择那按钮组的任何单选按钮将会自动取消同组当前选择的任何按钮。-->
+    <input type="radio"  value="male" name="sex" checked>男
+    <input type="radio"  value="female" name="sex">女
+</div>
+<input type="reset" value="重置">
+<input type="color" value="选择喜欢的颜色">
+<script>
+    const radio = document.querySelector(".radio1")
+    radio.addEventListener("click",function (e){
+        if (e.target.checked){
+            console.log(e.target.checked)
+        }
+
+    })
+    const inp = document.querySelector("input")
+    inp.addEventListener("change", function () {
+        console.log(111)
+    })
+    console.log(inp.nextElementSibling);
+    console.log(inp.nextSibling, typeof inp.nextSibling)
+    console.log(inp.nextSibling.nextSibling)
+    console.log(inp.nextSibling.nextElementSibling)
+    console.log(inp.nextSibling.nodeType)
+console.log(22222)
+    //查看复选框是否勾选
+    const check = document.querySelector("[name=check]")
+    check.addEventListener("click", function () {
+        console.log(check.checked)
+        console.log(location.href);
+    })
+</script>
+
+</body>
+</html>

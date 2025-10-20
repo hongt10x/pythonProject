@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    div {
+      height: 100px;
+      width: 100px;
+      background-color: #3cdc10;
+    }
+  </style>
+</head>
+<body>
+<ul>
+  <li>我是老大</li>
+  <li>我是测试点</li>
+</ul>
+<script>
+  // 创建div节点
+  const div = document.createElement("div")
+  // 追加div节点到最后，作为最后一个子元素
+  document.body.appendChild(div)
+  console.log(div)
+
+
+  const ul = document.querySelector("ul")
+  console.log(ul)
+  console.log(ul.children, typeof ul.children)
+  console.log(ul.childNodes)
+
+
+  const li = document.createElement("li")
+  li.innerHTML = "我是li"
+  li.className = "Li"
+  // ul.appendChild(li)  //往ul后追加li
+
+  ul.insertBefore(li, ul.children[0]) //往第一个ul的children前追加li
+  // ul.insertBefore(li, ul.children[1]) //往第一个ul的children前追加li
+  // ul.insertBefore(li, ul.children[2]) //往第一个ul的children前追加li
+  //
+  ul.appendChild(li.cloneNode(true)) // 克隆节点
+
+
+</script>
+</body>
+</html>

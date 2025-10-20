@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            font-size: large;
+            background-color: green;
+            border: solid 2px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="box"></div>
+</div>
+<script src="lodash.min.js"></script>
+<script>
+    //单位时间内，频繁触发时间，只执行最后一次；只要被打断就重新来
+
+    const box = document.querySelector(".box")
+    let i = 1
+
+    function mouseMove() {
+        box.innerHTML = i++
+    }
+
+    // box.addEventListener("mousemove", mouseMove)  //鼠标移动1px  i值就计数+1
+
+    //通过lodash实现防抖，_.debounce()函数
+    // box.addEventListener("mousemove",_.debounce(mouseMove, 100))
+
+
+    //自定义防抖函数，因为debounce的特点就是第一时间不调用，所以采用闭包形式
+    // let timer
+    function debounce(fn, t) {
+        let timer
+
+        function inner() {
+            if (timer) clearTimeout(timer)
+            timer = setTimeout(fn, t)
+            console.log(timer)
+        }
+
+        return inner
+    }
+
+        // 1000ms以内，再次移动定时器将被清除，重新执行函数行为
+    box.addEventListener("mousemove", debounce(mouseMove, 1000))
+
+
+    function t1() {
+        const i = 100
+        return function t2() {
+            console.log(i)
+        }
+        // const i = 100
+    }
+
+    t1()()
+
+
+</script>
+
+</body>
+</html>

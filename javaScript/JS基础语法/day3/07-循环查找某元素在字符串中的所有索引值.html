@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // var str1 = "abcdossoxsoseoeoesofyou"
+    // var id = str1.indexOf('o')
+    // var num = 0
+    // while (id !== -1) {
+    //     console.log(id)
+    //     num ++
+    //     id = str1.indexOf('o', id + 1)
+    // }
+    // console.log("'o'在字符串中出现的总次数为：",num)
+
+    var arr1 = ["blue", "blue", "red", "yellow", "blue", "pink"]
+    var aid = arr1.indexOf("blue")
+    var anum = 0
+    while (aid !== -1) {
+        console.log(aid)
+        aid = arr1.indexOf("blue", aid + 1)
+        anum ++
+    }
+    console.log("'blue'在数组中出现的总次数为：",anum)
+</script>
+</body>
+</html>

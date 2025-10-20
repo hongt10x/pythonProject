@@ -1,0 +1,4 @@
+name: &demo goodman
+first name: *demo
+
+hobby: !include_ "./b.yml"

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /*
+    1.push  向末尾添加元素，返回值为数组的长度
+    2.unshift 向首部插入元素，返回值为数组的长度
+    3. pop 删除末尾的元素，返回删除的元素值
+    4. shift 删除数组首元素，返回删除的元素值
+     */
+    // var arr1 = [1, 33,11,32];
+    // arr1.push(4, 5)
+    // console.log(arr1)
+    // var len = arr1.push([6,7]) //
+    // console.log(arr1)
+    // console.log(len)
+
+    // var len2 = arr1.unshift('blue')
+    // var len = arr1.push([6,7])
+    // console.log(arr1,len2)
+    //
+    // var1 = arr1.pop()
+    // console.log(arr1,var1)
+    //
+    // var2 = arr1.shift()
+    // console.log(arr1,var2)
+    //
+    // arr1.sort()
+    // ret = arr1.reverse()
+    // console.log(arr1,ret)
+
+    var arr3 = [13,4,77,13,1,7];
+    arr3.sort()
+    console.log(arr3)
+    arr3.sort(function (a, b) {
+        // return a - b //升序排列，固定写法
+        return b-a //降序排列，固定写法
+    })
+    console.log(arr3)
+
+    id1 = arr3.indexOf(13)  //顺序查找，返回数组元素，只返回第一个满足条件的索引号；找不到返回-1
+    console.log(arr3,id1)
+
+    id2 = arr3.lastIndexOf(13) //逆序查找，索引号不变，重复值只返回遵循就近原则
+    console.log(arr3,id2)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+filename: 天工主机+OS+新线表.xlsx
+
+#1、数据处理前对各表数据进行重组重新分配业务IP和带内IP
+update_sheetinfos: # 对OS表 涉及操作
+  update_pattern: [ "业务IP_新", "带内IP_新", "主机名_新" ]
+  os:
+    sheetName: OS
+    pattern: [ "IP(必填)", "带内IP(必填)" ,"主机名(必填)" ]
+  host:
+    sheetName: 主机
+    pattern: [ "通讯IP(必填)", "带内管理IP", "业务IP", "带内IP", "主机名称" ]
+  antivirus: # 4
+    sheetName: 防病毒资产
+    pattern: [ "IP地址", "主机" ,"虚拟机/终端名称" ]
+  bastion: # 1
+    sheetName: 堡垒机
+    pattern: [ "备注",  "#主机IP", "主机名称" ]
+  automation: # 3
+    sheetName: 自动化
+    pattern: [ "服务器IP", "服务器名称", "服务器名称" ]
+    refer_index: 1
+  titan: # 2
+    sheetName: 青藤云
+    pattern: [ "内网IP", "主机IP", "外网IP" ,"主机名" ]
+    refer_index: 2
+  newline:
+    sheetName: 新线资产汇总
+    pattern: [ "IP", "带内IP地址" ,"主机名" ]

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        text-align: right;
+    }
+    </style>
+</head>
+<body>
+<div>X</div>
+<a href="https://www.itcast.cn">支付成功，开始倒计时跳转到首页</a>
+<button>后退</button>
+<button>前进</button>
+<button>刷新</button>
+<a href="https://www.itcast.cn">支付成功，开始倒计时跳转到首页</a>
+<script>
+    const div = document.querySelector("div")
+    setTimeout(function (){
+        div.style.display = "none"
+    },3000)
+
+const back = document.querySelector("body button")
+// console.log(back)
+const forward = back.nextElementSibling
+console.log(forward)
+back.addEventListener("click", function (){
+    history.back()
+    console.log(back.innerHTML)
+    // history.go(-1)
+})
+forward.addEventListener("click", function (){
+    history.forward()
+    console.log(forward.innerHTML)
+    // history.go(1)
+})
+
+const fresh = forward.nextElementSibling
+console.log(fresh)
+fresh.addEventListener("click", function (){
+    location.reload()
+})
+</script>
+
+</body>
+</html>

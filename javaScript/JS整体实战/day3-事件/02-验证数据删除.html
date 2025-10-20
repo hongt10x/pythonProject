@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+  const arr = ["张飞","刘备","关羽"]
+  console.log(arr.length)
+  let random = Math.floor(Math.random() * arr.length)
+  console.log(random)
+  console.log(arr[random])
+  arr.splice(random, 1)
+  console.log(arr)
+</script>
+</body>
+</html>

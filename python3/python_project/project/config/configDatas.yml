@@ -1,0 +1,171 @@
+filename: 天工主机+OS+新线表.xlsx
+
+#1、要求各表数据行ip不重复，针对堡垒机表，需要提前做筛选
+update_os: # 对OS表 涉及操作
+  os:
+    sheetName: OS
+    update_info: [ "防护状态", "版本信息", "防病毒运行状态", "天工纳管状态", "自动化服务器状态", "青藤云主机状态", "回收状态", "ping状态", "数据来源" ]
+  host:
+    sheetName: 主机
+    compare_column: 2
+    compare_datas:
+      pattern: [ "业务IP_新", "带内IP_新", "主机名_新", "主机类型", "操作系统类型", "操作系统版本", "操作系统名称" ]
+      update_info: [ "业务IP_新",  "带内IP_新", "主机名_新", "服务器虚拟化软件名称", "操作系统类型", "操作系统版本", "数据来源" ]
+      refer_index: 5  # 处理”操作系统版本“
+    compare_status:
+      pattern: [ "业务IP_新", "带内IP_新" ]
+      update_info: [ "业务IP_新", "带内IP_新", "天工纳管状态" ]
+      compare_logic: OR
+  antivirus: # 4
+    sheetName: 防病毒资产
+    compare_column: 2
+    compare_datas:
+      pattern: [ "业务IP_新", "带内IP_新", "主机名_新", "操作系统" ]
+      update_info: [ "业务IP_新", "带内IP_新", "主机名_新",  "操作系统类型", "数据来源" ]
+    compare_status:
+      pattern: [ "业务IP_新", "带内IP_新", "防护状态", "版本信息", "运行状态" ]
+      update_info: [ "业务IP_新", "带内IP_新", "防护状态", "版本信息", "防病毒运行状态" ]
+      compare_logic: OR
+  bastion: # 1
+    sheetName: 堡垒机
+    compare_column: 2
+    compare_datas:
+      pattern: [ "业务IP_新", "带内IP_新", "主机名_新", "操作系统", "操作系统", "所属部门" ]
+      update_info: [ "业务IP_新", "带内IP_新", "主机名_新", "操作系统版本", "操作系统类型", "资源分配初始信息", "数据来源" ]
+      refer_index: 4  # 处理”操作系统类型“
+    compare_status:
+      pattern: [ "业务IP_新", "带内IP_新" ]
+      update_info: [ "业务IP_新", "带内IP_新", "堡垒机纳管状态" ]
+      compare_logic: OR
+  automation: # 3
+    sheetName: 自动化
+    compare_column: 2
+    compare_datas:
+      pattern: [ "业务IP_新", "带内IP_新", "主机名_新", "平台类型" ]
+      update_info: [ "业务IP_新", "带内IP_新","主机名_新", "操作系统类型", "数据来源" ]
+    compare_status:
+      pattern: [ "业务IP_新", "带内IP_新",  "服务器状态" ]
+      update_info: [ "业务IP_新", "带内IP_新", "自动化服务器状态" ]
+      compare_logic: OR
+  titan: # 2
+    sheetName: 青藤云
+    compare_column: 2
+    compare_datas:
+      pattern: [ "业务IP_新", "带内IP_新", "主机名_新", "操作系统", "操作系统", "业务组" ]
+      update_info: [ "业务IP_新", "带内IP_新", "主机名_新", "操作系统版本", "操作系统类型", "资源分配初始信息", "数据来源" ]
+      refer_index: 4  # 处理”操作系统类型“
+    compare_status:
+      pattern: [ "业务IP_新", "带内IP_新",  "主机状态" ]
+      update_info: [ "业务IP_新", "带内IP_新", "青藤云主机状态" ]
+      compare_logic: OR
+  ping:
+    sheetName: ping
+    compare_column: 1
+    compare_status:
+      pattern: [ "业务IP", "ping状态" ]
+      update_info: [ "业务IP_新", "ping状态" ]
+  recycle:
+    sheetName: 回收表
+    compare_column: 2
+    compare_status:
+      pattern: [ "业务IP", "主机名" , "回收状态" ]
+      update_info: [ "业务IP_新", "主机名_新", "回收状态" ]
+      compare_logic: AND
+
+
+update_host: #主机表 涉及操作
+  host:
+    sheetName: 主机
+    update_info: [ "OS序号", "OS校对" ]
+  os:
+    compare_column: 2
+    sheetName: OS
+    compare_datas_other:
+      pattern: [ "业务IP_新", "带内IP_新" ]
+      update_info: [ "业务IP_新", "带内IP_新", "OS序号", "OS校对" ]
+
+
+update_titan: #青藤云表 涉及操作
+  titan:
+    sheetName: 青藤云
+    update_info: [ "OS序号", "OS校对" ]
+  os:
+    sheetName: OS
+    compare_column: 2
+    compare_datas_other:
+      pattern: [ "业务IP_新", "带内IP_新" ]
+      update_info: [ "业务IP_新", "带内IP_新", "OS序号", "OS校对" ]
+
+
+update_bastion: #堡垒机表 涉及操作
+  bastion:
+    sheetName: 堡垒机
+    update_info: [ "OS序号", "OS校对" ]
+  os:
+    sheetName: OS
+    compare_column: 2
+    compare_datas_other:
+      pattern: [ "业务IP_新", "带内IP_新" ]
+      update_info: [ "业务IP_新", "带内IP_新", "OS序号", "OS校对" ]
+
+
+update_automation: #自动化表 涉及操作
+  automation:
+    sheetName: 自动化
+    update_info: [ "OS序号", "OS校对" ]
+  os:
+    sheetName: OS
+    compare_column: 2
+    compare_datas_other:
+      pattern: [ "业务IP_新", "带内IP_新" ]
+      update_info: [ "业务IP_新", "带内IP_新", "OS序号", "OS校对" ]
+
+
+update_antivirus: #防病毒表 涉及操作
+  antivirus:
+    sheetName: 防病毒资产
+    update_info: [ "OS序号", "OS校对" ]
+  os:
+    sheetName: OS
+    compare_column: 2
+    compare_datas_other:
+      pattern: [ "业务IP_新", "带内IP_新" ]
+      update_info: [ "业务IP_新", "带内IP_新", "OS序号", "OS校对" ]
+
+
+update_newline: # 对 新线资产汇总 表 涉及操作
+  newline:
+    sheetName: 新线资产汇总
+    update_info: [ "防护状态", "版本信息", "防病毒运行状态", "青藤云主机状态", "堡垒机纳管状态", "数据来源" ]
+  antivirus: # 4
+    sheetName: 防病毒资产
+    compare_column: 2
+    compare_datas:
+      pattern: [ "业务IP_新", "带内IP_新", "主机名_新", "操作系统" ]
+      update_info: [ "业务IP_新", "带内IP_新", "主机名_新",  "操作系统类型", "数据来源" ]
+    compare_status:
+      pattern: [ "业务IP_新", "带内IP_新", "防护状态", "版本信息", "运行状态" ]
+      update_info: [  "业务IP_新", "带内IP_新", "防护状态", "版本信息", "防病毒运行状态" ]
+      compare_logic: OR
+  bastion: # 1
+    sheetName: 堡垒机
+    compare_column: 2
+    compare_datas:
+      pattern: [ "业务IP_新", "带内IP_新", "主机名_新", "操作系统", "操作系统" ]
+      update_info: [ "业务IP_新", "带内IP_新", "主机名_新", "操作系统版本", "操作系统类型", "数据来源" ]
+      refer_index: 4  # 处理”操作系统类型“
+    compare_status:
+      pattern: [ "业务IP_新", "带内IP_新" ]
+      update_info: [  "业务IP_新", "带内IP_新", "堡垒机纳管状态" ]
+      compare_logic: OR
+  titan: # 2
+    sheetName: 青藤云
+    compare_column: 2
+    compare_datas:
+      pattern: [ "业务IP_新", "带内IP_新", "主机名_新", "操作系统", "操作系统" ]
+      update_info: [ "业务IP_新", "带内IP_新", "主机名_新", "操作系统版本", "操作系统类型", "数据来源" ]
+      refer_index: 4  # 处理”操作系统类型“
+    compare_status:
+      pattern: [ "业务IP_新", "带内IP_新",  "主机状态" ]
+      update_info: ["业务IP_新", "带内IP_新", "青藤云主机状态" ]
+      compare_logic: OR

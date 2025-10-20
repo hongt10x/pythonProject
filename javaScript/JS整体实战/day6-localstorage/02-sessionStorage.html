@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+    //语法与localStorage一致
+    sessionStorage.setItem("key","123456")
+    console.log(sessionStorage.getItem("key"))
+    // const n= setTimeout(function (){
+    //     location.reload()
+    //
+    // }, 5000)
+
+    console.log(sessionStorage.getItem("key"))
+
+    obj = {name: 'wanght'}
+    sessionStorage.setItem("obj",JSON.stringify(obj))
+    console.log(sessionStorage.getItem("obj"))
+</script>
+
+</body>
+</html>

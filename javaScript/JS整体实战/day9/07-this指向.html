@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+"use strict"  //严格校验模式，不允许重复
+function t1(){
+    console.log(this)
+}
+t1()  //undefined
+
+!(() =>{
+    console.log(this)})() //window
+
+
+const obj = {
+    func: function (){
+        console.log(this)
+    },
+    func2: () => {
+        console.log(this)
+    }
+}
+
+obj.func() //object
+obj.func2() //window
+
+
+
+</script>
+
+</body>
+</html>

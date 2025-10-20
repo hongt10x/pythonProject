@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background-color: #3cdc10;
+            text-align: center;
+        }
+        .box1 {
+            position: fixed;
+            height: 100px;
+            width: 100px;
+            background-color: #006699;
+            text-align: right;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<button>点击</button>
+
+<body>
+<div class="box">
+    我是广告
+    <div class="box1">X</div>
+</div>
+
+<script>
+  /*
+  1、事件源
+  2、事件类型
+  3、事件动作
+   */
+  // const btn = document.querySelector('button')
+  // btn.addEventListener('click', function (){
+  //   alert("get you ~~~")
+  // })
+
+  const box = document.querySelector('.box')
+  const box1 = document.querySelector('.box1')
+  box1.addEventListener('click',function (){
+      box.style.display = 'none'
+  })
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a1ced66b-57d8-4cb7-b65a-a2e8a5bdd212" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../python3\exportToHTML" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="BashSupport Pro Bash" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/PyCharm2023.1/python_stubs/1217382400/_bisect.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/PyCharm2023.1/python_stubs/1217382400/builtins.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../../Program Files/Python39/Lib/collections/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../../Program Files/Python39/Lib/site-packages/loguru/__init__.pyi" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../../Program Files/Python39/Lib/site-packages/openpyxl/reader/excel.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../../Program Files/Python39/Lib/site-packages/pywinauto/keyboard.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../../Program Files/Python39/Lib/site-packages/selenium/webdriver/common/by.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2QxOLIEdukygyPh7d6EXddYw3kW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/PythonStudy",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PythonStudy\python3\230821-excel" />
+      <recent name="D:\PythonStudy\python3\松勤课堂\DeliverySystem完整代码\testCase" />
+      <recent name="D:\PythonStudy\python3\20240227-py解读.ini文件" />
+      <recent name="D:\PythonStudy\python3" />
+      <recent name="D:\PythonStudy\python3\20240123-解析km文件" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PythonStudy\python3\230103-fastapi\src" />
+      <recent name="D:\PythonStudy\python3\tmp_2023" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.11_爬取松勤课堂内容">
+    <configuration name="01_property学习" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pratice_2024" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pratice_2024/01_property学习.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="11_爬取松勤课堂内容" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Program Files\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pratice_2024" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pratice_2024/11_爬取松勤课堂内容.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="230620_模拟鼠标的操作" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/松勤课堂/selenium_study_浏览器执行" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/松勤课堂/selenium_study_浏览器执行/230620_模拟鼠标的操作.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="login" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/libs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/libs/login.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="read_html" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/230711-读取某一页面所有text" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/230711-读取某一页面所有text/read_html.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.01_property学习" />
+      <item itemvalue="Python.11_爬取松勤课堂内容" />
+      <item itemvalue="Python.230620_模拟鼠标的操作" />
+      <item itemvalue="Python.login" />
+      <item itemvalue="Python.read_html" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.11_爬取松勤课堂内容" />
+        <item itemvalue="Python.read_html" />
+        <item itemvalue="Python.login" />
+        <item itemvalue="Python.230620_模拟鼠标的操作" />
+        <item itemvalue="Python.01_property学习" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1ced66b-57d8-4cb7-b65a-a2e8a5bdd212" name="Changes" comment="" />
+      <created>1686291709703</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686291709703</updated>
+      <workItem from="1686291710903" duration="270000" />
+      <workItem from="1686291994025" duration="129000" />
+      <workItem from="1686292130440" duration="539000" />
+      <workItem from="1686624039398" duration="2707000" />
+      <workItem from="1686635563712" duration="3000" />
+      <workItem from="1686635821336" duration="3570000" />
+      <workItem from="1687153757816" duration="1991000" />
+      <workItem from="1687224638292" duration="10108000" />
+      <workItem from="1687248974225" duration="2506000" />
+      <workItem from="1687252139559" duration="2091000" />
+      <workItem from="1687329317798" duration="6841000" />
+      <workItem from="1687657348671" duration="8126000" />
+      <workItem from="1687674081496" duration="10818000" />
+      <workItem from="1687691090017" duration="2314000" />
+      <workItem from="1687743013191" duration="6216000" />
+      <workItem from="1687832199980" duration="6162000" />
+      <workItem from="1688028129166" duration="4360000" />
+      <workItem from="1688089498722" duration="1250000" />
+      <workItem from="1688608043854" duration="819000" />
+      <workItem from="1688611701227" duration="11406000" />
+      <workItem from="1688723653538" duration="903000" />
+      <workItem from="1688954898472" duration="6574000" />
+      <workItem from="1689043210449" duration="8762000" />
+      <workItem from="1689126330685" duration="6635000" />
+      <workItem from="1689210949008" duration="2997000" />
+      <workItem from="1689577144816" duration="6794000" />
+      <workItem from="1689821090828" duration="3826000" />
+      <workItem from="1689905741038" duration="9508000" />
+      <workItem from="1690270470666" duration="4126000" />
+      <workItem from="1690337954206" duration="3000" />
+      <workItem from="1690358245171" duration="4553000" />
+      <workItem from="1690423915786" duration="760000" />
+      <workItem from="1690425975956" duration="735000" />
+      <workItem from="1690436737944" duration="1282000" />
+      <workItem from="1690438037070" duration="2937000" />
+      <workItem from="1690513472666" duration="668000" />
+      <workItem from="1690536545194" duration="1742000" />
+      <workItem from="1690787681752" duration="1821000" />
+      <workItem from="1690855513740" duration="3250000" />
+      <workItem from="1691404072728" duration="568000" />
+      <workItem from="1691546339307" duration="2434000" />
+      <workItem from="1691573795280" duration="2300000" />
+      <workItem from="1691631293522" duration="6020000" />
+      <workItem from="1691662447240" duration="168000" />
+      <workItem from="1691662623220" duration="1034000" />
+      <workItem from="1691742169855" duration="1496000" />
+      <workItem from="1692079935594" duration="3456000" />
+      <workItem from="1692235848952" duration="1254000" />
+      <workItem from="1692326780575" duration="4724000" />
+      <workItem from="1692407153890" duration="6500000" />
+      <workItem from="1692582608201" duration="2344000" />
+      <workItem from="1692584989203" duration="3781000" />
+      <workItem from="1692671219501" duration="7127000" />
+      <workItem from="1692770154623" duration="1839000" />
+      <workItem from="1692842073985" duration="10596000" />
+      <workItem from="1692927418025" duration="5575000" />
+      <workItem from="1693187512074" duration="2460000" />
+      <workItem from="1693202421820" duration="6265000" />
+      <workItem from="1693275865484" duration="3858000" />
+      <workItem from="1693374293046" duration="598000" />
+      <workItem from="1693446643694" duration="3471000" />
+      <workItem from="1693552317623" duration="8000" />
+      <workItem from="1693806717930" duration="6152000" />
+      <workItem from="1693878804093" duration="3266000" />
+      <workItem from="1693904351485" duration="2659000" />
+      <workItem from="1693965516007" duration="603000" />
+      <workItem from="1694052192744" duration="7767000" />
+      <workItem from="1694137317161" duration="9616000" />
+      <workItem from="1694482989634" duration="3105000" />
+      <workItem from="1694742419455" duration="3118000" />
+      <workItem from="1695002958813" duration="1706000" />
+      <workItem from="1695091460009" duration="7154000" />
+      <workItem from="1695174381788" duration="7549000" />
+      <workItem from="1695350009691" duration="2233000" />
+      <workItem from="1696833488512" duration="368000" />
+      <workItem from="1696835222786" duration="1367000" />
+      <workItem from="1697101817244" duration="825000" />
+      <workItem from="1697549390541" duration="305000" />
+      <workItem from="1698718251328" duration="2014000" />
+      <workItem from="1698817683191" duration="315000" />
+      <workItem from="1698891370423" duration="875000" />
+      <workItem from="1698892429097" duration="322000" />
+      <workItem from="1698892762493" duration="192000" />
+      <workItem from="1698892964729" duration="165000" />
+      <workItem from="1698893138738" duration="39000" />
+      <workItem from="1698893184862" duration="648000" />
+      <workItem from="1698893844083" duration="164000" />
+      <workItem from="1698894017509" duration="664000" />
+      <workItem from="1698924503028" duration="465000" />
+      <workItem from="1698924979056" duration="444000" />
+      <workItem from="1698928659495" duration="104000" />
+      <workItem from="1698929415206" duration="1049000" />
+      <workItem from="1698975692700" duration="160000" />
+      <workItem from="1698975864868" duration="672000" />
+      <workItem from="1699265430620" duration="1171000" />
+      <workItem from="1699336153879" duration="594000" />
+      <workItem from="1699943553137" duration="1082000" />
+      <workItem from="1700114250042" duration="643000" />
+      <workItem from="1700617187153" duration="2659000" />
+      <workItem from="1700735366001" duration="156000" />
+      <workItem from="1700793763031" duration="2060000" />
+      <workItem from="1700806611624" duration="121000" />
+      <workItem from="1700806742238" duration="735000" />
+      <workItem from="1700815890139" duration="3719000" />
+      <workItem from="1701065318009" duration="3507000" />
+      <workItem from="1701149489437" duration="10582000" />
+      <workItem from="1701751315716" duration="1548000" />
+      <workItem from="1702970490462" duration="5600000" />
+      <workItem from="1704248992716" duration="2983000" />
+      <workItem from="1704331502458" duration="4694000" />
+      <workItem from="1704432923097" duration="2212000" />
+      <workItem from="1704952517445" duration="678000" />
+      <workItem from="1704962196526" duration="1782000" />
+      <workItem from="1704964300201" duration="74000" />
+      <workItem from="1704964382234" duration="321000" />
+      <workItem from="1704964819298" duration="327000" />
+      <workItem from="1704966330033" duration="1271000" />
+      <workItem from="1704967659608" duration="14000" />
+      <workItem from="1704967724616" duration="8000" />
+      <workItem from="1704967769286" duration="187000" />
+      <workItem from="1704968041293" duration="111000" />
+      <workItem from="1704968177737" duration="40000" />
+      <workItem from="1704968228258" duration="49000" />
+      <workItem from="1704968287470" duration="11000" />
+      <workItem from="1704968370318" duration="234000" />
+      <workItem from="1705022900251" duration="13420000" />
+      <workItem from="1705302929289" duration="674000" />
+      <workItem from="1705379086857" duration="191000" />
+      <workItem from="1705396648441" duration="578000" />
+      <workItem from="1705397237326" duration="578000" />
+      <workItem from="1705397837612" duration="11000" />
+      <workItem from="1705397855129" duration="25000" />
+      <workItem from="1705397887298" duration="20000" />
+      <workItem from="1705397938088" duration="2571000" />
+      <workItem from="1705460351073" duration="2159000" />
+      <workItem from="1705472621443" duration="542000" />
+      <workItem from="1705473174782" duration="1025000" />
+      <workItem from="1705541858369" duration="947000" />
+      <workItem from="1705629342924" duration="1890000" />
+      <workItem from="1705647221217" duration="2390000" />
+      <workItem from="1705989415832" duration="5374000" />
+      <workItem from="1706062074626" duration="6722000" />
+      <workItem from="1706148539809" duration="3297000" />
+      <workItem from="1706161733555" duration="11965000" />
+      <workItem from="1706233793209" duration="17947000" />
+      <workItem from="1706493542532" duration="3351000" />
+      <workItem from="1706509230470" duration="4235000" />
+      <workItem from="1706596508851" duration="862000" />
+      <workItem from="1708307542138" duration="2873000" />
+      <workItem from="1708335028225" duration="1381000" />
+      <workItem from="1708393163394" duration="2204000" />
+      <workItem from="1708593084930" duration="806000" />
+      <workItem from="1708655149845" duration="5365000" />
+      <workItem from="1708669191237" duration="524000" />
+      <workItem from="1708682727731" duration="592000" />
+      <workItem from="1708683632302" duration="1715000" />
+      <workItem from="1708685963822" duration="481000" />
+      <workItem from="1708687857170" duration="712000" />
+      <workItem from="1708925833358" duration="6292000" />
+      <workItem from="1708997726947" duration="3931000" />
+      <workItem from="1709002236444" duration="1228000" />
+      <workItem from="1709011795791" duration="304000" />
+      <workItem from="1709012111788" duration="5651000" />
+      <workItem from="1709185362114" duration="4328000" />
+      <workItem from="1709192157918" duration="6939000" />
+      <workItem from="1709781929480" duration="1190000" />
+      <workItem from="1709783379314" duration="2875000" />
+      <workItem from="1709786540002" duration="533000" />
+      <workItem from="1709801116932" duration="5431000" />
+      <workItem from="1710077609304" duration="431000" />
+      <workItem from="1710559870912" duration="5847000" />
+      <workItem from="1710770641645" duration="40000" />
+      <workItem from="1710770782681" duration="120000" />
+      <workItem from="1710771099777" duration="304000" />
+      <workItem from="1710771414030" duration="558000" />
+      <workItem from="1710771982722" duration="121000" />
+      <workItem from="1710772110902" duration="95000" />
+      <workItem from="1710772218030" duration="11000" />
+      <workItem from="1710772235106" duration="83000" />
+      <workItem from="1711785648605" duration="599000" />
+      <workItem from="1711815200923" duration="2369000" />
+      <workItem from="1712459865898" duration="373000" />
+      <workItem from="1712460945771" duration="209000" />
+      <workItem from="1712461220635" duration="182000" />
+      <workItem from="1712540507736" duration="1184000" />
+      <workItem from="1712554978312" duration="4066000" />
+      <workItem from="1712627800374" duration="11660000" />
+      <workItem from="1712716316967" duration="12563000" />
+      <workItem from="1712796752616" duration="9800000" />
+      <workItem from="1712821025164" duration="3993000" />
+      <workItem from="1712882842075" duration="13209000" />
+      <workItem from="1713142666626" duration="17768000" />
+      <workItem from="1713231633544" duration="13904000" />
+      <workItem from="1713259265498" duration="2834000" />
+      <workItem from="1713314731590" duration="5497000" />
+      <workItem from="1713331884492" duration="2870000" />
+      <workItem from="1713525907197" duration="1969000" />
+      <workItem from="1713764670570" duration="11946000" />
+      <workItem from="1713940016797" duration="3709000" />
+      <workItem from="1714027097475" duration="20316000" />
+      <workItem from="1714265740820" duration="17275000" />
+      <workItem from="1714296972131" duration="508000" />
+      <workItem from="1714375550552" duration="269000" />
+      <workItem from="1714376215496" duration="485000" />
+      <workItem from="1714376724039" duration="89000" />
+      <workItem from="1714376827218" duration="46000" />
+      <workItem from="1714376999857" duration="62000" />
+      <workItem from="1714380119291" duration="1577000" />
+      <workItem from="1714381844830" duration="1468000" />
+      <workItem from="1714383374332" duration="36000" />
+      <workItem from="1714383417386" duration="529000" />
+      <workItem from="1714383994139" duration="63000" />
+      <workItem from="1714384307056" duration="142000" />
+      <workItem from="1714981515076" duration="6000" />
+      <workItem from="1714981531027" duration="11000" />
+      <workItem from="1744178358200" duration="12000" />
+      <workItem from="1744178556261" duration="26000" />
+      <workItem from="1744178646421" duration="59000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/3_xlwings_py$issubset.coverage" NAME="issubset Coverage Results" MODIFIED="1704436972698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230815" />
+    <SUITE FILE_PATH="coverage/python3$vy.coverage" NAME="vy Coverage Results" MODIFIED="1705399087149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tmp_2023" />
+    <SUITE FILE_PATH="coverage/python3$pytest_for_test_login1_TestLogin.coverage" NAME="pytest for test_login1.TestLogin Coverage Results" MODIFIED="1709011807204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/testCase" />
+    <SUITE FILE_PATH="coverage/python3$pytest_for_test_shop1_TestShop.coverage" NAME="pytest for test_shop1.TestShop Coverage Results" MODIFIED="1709192071085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/testCase" />
+    <SUITE FILE_PATH="coverage/python3$test0712.coverage" NAME="test0712 Coverage Results" MODIFIED="1689129269273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230712-socket端口扫描" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$tYaml__1_.coverage" NAME="tYaml (1) Coverage Results" MODIFIED="1705025935082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/20240112-yaml研究2" />
+    <SUITE FILE_PATH="coverage/python3$5_openpyxlexcel.coverage" NAME="5_用openpyxl读取excel数据 Coverage Results" MODIFIED="1712636737571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230821-读取excel内容各种方法" />
+    <SUITE FILE_PATH="coverage/python3$pytest_in_test_login1_py.coverage" NAME="pytest in test_login1.py Coverage Results" MODIFIED="1709012402272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/testCase" />
+    <SUITE FILE_PATH="coverage/python3$03___.coverage" NAME="03-滚动条-无头浏览器_携带用户登录信息 Coverage Results" MODIFIED="1714116243944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/20240312-selenium" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$231205_test.coverage" NAME="231205-test Coverage Results" MODIFIED="1704962717506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/231124" />
+    <SUITE FILE_PATH="coverage/python3$multiServer.coverage" NAME="multiServer Coverage Results" MODIFIED="1689056972647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230711-socket" />
+    <SUITE FILE_PATH="coverage/python3$handle_rsa__1_.coverage" NAME="handle_rsa (1) Coverage Results" MODIFIED="1688623644022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230602/utils" />
+    <SUITE FILE_PATH="coverage/python3$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1687153761973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_study" />
+    <SUITE FILE_PATH="coverage/python3$02_namedtuple.coverage" NAME="02_namedtuple学习 Coverage Results" MODIFIED="1713248213840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pratice_2024" />
+    <SUITE FILE_PATH="coverage/python3$2_numpy.coverage" NAME="2_numpy Coverage Results" MODIFIED="1712568031722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230821-excel" />
+    <SUITE FILE_PATH="coverage/python3$4_matplotlib.coverage" NAME="4_matplotlib Coverage Results" MODIFIED="1692689538052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230821-excel" />
+    <SUITE FILE_PATH="coverage/python3$pytest_for_test_login_TestLogin_test_login.coverage" NAME="pytest for test_login.TestLogin.test_login Coverage Results" MODIFIED="1709802228033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/testCase" />
+    <SUITE FILE_PATH="coverage/python3$tYaml__1_.coverage" NAME="tYaml (1) Coverage Results" MODIFIED="1713958406369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/20240112-yaml引用研究1" />
+    <SUITE FILE_PATH="coverage/python3$handle_excel_V3.coverage" NAME="handle_excel_V3 Coverage Results" MODIFIED="1709000256515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/utils" />
+    <SUITE FILE_PATH="coverage/python3$client_A.coverage" NAME="client_A Coverage Results" MODIFIED="1689056975985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230711-socket" />
+    <SUITE FILE_PATH="coverage/python3$230721_url__1_.coverage" NAME="230721_简易url (1) Coverage Results" MODIFIED="1689932528852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230712-GUI窗口" />
+    <SUITE FILE_PATH="coverage/python3$test.coverage" NAME="test端口扫描 Coverage Results" MODIFIED="1697101929190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230712-socket端口扫描" />
+    <SUITE FILE_PATH="coverage/python3$read_html.coverage" NAME="read_html Coverage Results" MODIFIED="1714383280445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230711-读取某一页面所有text" />
+    <SUITE FILE_PATH="coverage/python3$5_openpyxl__1_.coverage" NAME="5_openpyxl (1) Coverage Results" MODIFIED="1712718778688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230821-读取excel内容各种方法" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$example__1_.coverage" NAME="example (1) Coverage Results" MODIFIED="1704250140711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230103-fastapi/src" />
+    <SUITE FILE_PATH="coverage/python3$05_metaclass.coverage" NAME="05_metaclass元类的学习 Coverage Results" MODIFIED="1713164373221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pratice_2024" />
+    <SUITE FILE_PATH="coverage/python3$pytest_in_22_py.coverage" NAME="pytest in 22.py Coverage Results" MODIFIED="1713776391670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tmp_2023" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$test01.coverage" NAME="test01 Coverage Results" MODIFIED="1704348285821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230706" />
+    <SUITE FILE_PATH="coverage/python3$reqeust__getparams__postdata.coverage" NAME="reqeust的参数--get请求用params--post请求用data Coverage Results" MODIFIED="1712885271950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tmp_2023" />
+    <SUITE FILE_PATH="coverage/python3$request11.coverage" NAME="request11 Coverage Results" MODIFIED="1712555505485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230815" />
+    <SUITE FILE_PATH="coverage/python3$06_.coverage" NAME="06_并发锁问题 Coverage Results" MODIFIED="1713170284556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pratice_2024" />
+    <SUITE FILE_PATH="coverage/python3$08_yield.coverage" NAME="08_yield的集中学习 Coverage Results" MODIFIED="1713777854518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pratice_2024" />
+    <SUITE FILE_PATH="coverage/python3$loginRSA.coverage" NAME="loginRSA Coverage Results" MODIFIED="1708684056413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/libs" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$handle_yml.coverage" NAME="handle_yml Coverage Results" MODIFIED="1704346477977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230602/utils" />
+    <SUITE FILE_PATH="coverage/python3$230630_selenium.coverage" NAME="230630_selenium Coverage Results" MODIFIED="1692410961071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_study" />
+    <SUITE FILE_PATH="coverage/python3$01_select.coverage" NAME="01-select练习 Coverage Results" MODIFIED="1711815235615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/selenium_集合" />
+    <SUITE FILE_PATH="coverage/python3$230621_.coverage" NAME="230621_基础用法 Coverage Results" MODIFIED="1708308260551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/selenium_study_浏览器执行" />
+    <SUITE FILE_PATH="coverage/python3$test230726.coverage" NAME="test230726 Coverage Results" MODIFIED="1708396356418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tmp_2023" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$study_chardet.coverage" NAME="study_chardet Coverage Results" MODIFIED="1700794746716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/231124" />
+    <SUITE FILE_PATH="coverage/python3$login__1_.coverage" NAME="login (1) Coverage Results" MODIFIED="1690870426623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230602/lib" />
+    <SUITE FILE_PATH="coverage/python3$03_.coverage" NAME="03_方法链实践 Coverage Results" MODIFIED="1714286040636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pratice_2024" />
+    <SUITE FILE_PATH="coverage/python3$test230613.coverage" NAME="test230613 Coverage Results" MODIFIED="1686637001191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_study" />
+    <SUITE FILE_PATH="coverage/python3$01_ini.coverage" NAME="01-验证解读ini文件 Coverage Results" MODIFIED="1713940987503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/20240227-py解读.ini文件" />
+    <SUITE FILE_PATH="coverage/python3$reqeust.coverage" NAME="reqeust的参数 Coverage Results" MODIFIED="1708393465967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tmp_2023" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$example.coverage" NAME="example Coverage Results" MODIFIED="1704250098563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230103-fastapi" />
+    <SUITE FILE_PATH="coverage/python3$test230828.coverage" NAME="test230828 Coverage Results" MODIFIED="1695092063570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tmp_2023" />
+    <SUITE FILE_PATH="coverage/python3$handle_rsa.coverage" NAME="handle_rsa Coverage Results" MODIFIED="1688623115599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DeliverySystem完整代码/utils" />
+    <SUITE FILE_PATH="coverage/python3$test0726.coverage" NAME="test0726 Coverage Results" MODIFIED="1690513520151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DeliverySystem完整代码/configs" />
+    <SUITE FILE_PATH="coverage/python3$shop1.coverage" NAME="shop1 Coverage Results" MODIFIED="1709202126564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/libs" />
+    <SUITE FILE_PATH="coverage/python3$11_.coverage" NAME="11_爬取松勤课堂内容 Coverage Results" MODIFIED="1714384407972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pratice_2024" />
+    <SUITE FILE_PATH="coverage/python3$test230912.coverage" NAME="test230912 Coverage Results" MODIFIED="1712885336438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tmp_2023" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1704249782653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230103-fastapi" />
+    <SUITE FILE_PATH="coverage/python3$test01.coverage" NAME="test01 Coverage Results" MODIFIED="1692347930630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230706" />
+    <SUITE FILE_PATH="coverage/python3$230922_map.coverage" NAME="230922-map Coverage Results" MODIFIED="1708335252801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tmp_2023" />
+    <SUITE FILE_PATH="coverage/python3$tmp1_sh.coverage" NAME="tmp1.sh Coverage Results" MODIFIED="1706004185825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/20240123-解析km文件" />
+    <SUITE FILE_PATH="coverage/python3$09_.coverage" NAME="09_生成器学习 Coverage Results" MODIFIED="1713775701309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pratice_2024" />
+    <SUITE FILE_PATH="coverage/python3$230625_3.coverage" NAME="230625-3种等待 Coverage Results" MODIFIED="1687683535943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_study" />
+    <SUITE FILE_PATH="coverage/python3$05_metaclass__1_.coverage" NAME="05_metaclass元类与单例的学习 (1) Coverage Results" MODIFIED="1713250194517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pratice_2024" />
+    <SUITE FILE_PATH="coverage/python3$main.coverage" NAME="main Coverage Results" MODIFIED="1712555858388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230103-fastapi" />
+    <SUITE FILE_PATH="coverage/python3$.coverage" NAME=" Coverage Results" MODIFIED="1699266138755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DeliverySystem完整代码/common" />
+    <SUITE FILE_PATH="coverage/python3$04_.coverage" NAME="04-执行键盘操作 Coverage Results" MODIFIED="1714295604401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/20240312-selenium" />
+    <SUITE FILE_PATH="coverage/python3$230625_test.coverage" NAME="230625_test Coverage Results" MODIFIED="1687851320266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_study" />
+    <SUITE FILE_PATH="coverage/python3$pytest_in_test_login_py.coverage" NAME="pytest in test_login.py Coverage Results" MODIFIED="1709002447352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/testCase" />
+    <SUITE FILE_PATH="coverage/python3$t2_parse.coverage" NAME="t2-parse Coverage Results" MODIFIED="1706168496595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/20240123-解析km文件" />
+    <SUITE FILE_PATH="coverage/python3$cs_server_.coverage" NAME="cs_server_指定换行结尾 Coverage Results" MODIFIED="1693815778907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230711-socket" />
+    <SUITE FILE_PATH="coverage/python3$230919_.coverage" NAME="230919-生成器 Coverage Results" MODIFIED="1713853445197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tmp_2023" />
+    <SUITE FILE_PATH="coverage/python3$t1__1_.coverage" NAME="t1 (1) Coverage Results" MODIFIED="1708335110618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/20240129-堆栈" />
+    <SUITE FILE_PATH="coverage/python3$test230727__1_.coverage" NAME="test230727 (1) Coverage Results" MODIFIED="1690787921920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tmp_2023" />
+    <SUITE FILE_PATH="coverage/python3$230627_.coverage" NAME="230627_测试 Coverage Results" MODIFIED="1687853727073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_study" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$request11.coverage" NAME="request11 Coverage Results" MODIFIED="1704952530738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230815" />
+    <SUITE FILE_PATH="coverage/python3$0819mock.coverage" NAME="0819mock Coverage Results" MODIFIED="1705398014820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/mock技术" />
+    <SUITE FILE_PATH="coverage/python3$230620_.coverage" NAME="230620_模拟鼠标的操作 Coverage Results" MODIFIED="1714382592450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/selenium_study_浏览器执行" />
+    <SUITE FILE_PATH="coverage/python3$test_shop1.coverage" NAME="test_shop1 Coverage Results" MODIFIED="1709194513885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/testCase" />
+    <SUITE FILE_PATH="coverage/python3$6_bs4.coverage" NAME="6_bs4模块学习 Coverage Results" MODIFIED="1712827533625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230821-读取excel内容各种方法" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$con_mysql.coverage" NAME="con_mysql Coverage Results" MODIFIED="1704962825416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230908-mysql" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$_partial_.coverage" NAME="_partial-偏函数 Coverage Results" MODIFIED="1702973744174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/231124" />
+    <SUITE FILE_PATH="coverage/python3$con_mysql.coverage" NAME="con_mysql Coverage Results" MODIFIED="1714007751731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230908-mysql" />
+    <SUITE FILE_PATH="coverage/python3$handle_mock.coverage" NAME="handle_mock Coverage Results" MODIFIED="1688031381856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mock技术" />
+    <SUITE FILE_PATH="coverage/python3$test_231009.coverage" NAME="test端口扫描-231009 Coverage Results" MODIFIED="1696835910366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230712-socket端口扫描" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$230919_.coverage" NAME="230919-生成器 Coverage Results" MODIFIED="1705041963123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tmp_2023" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$t1.coverage" NAME="t1 Coverage Results" MODIFIED="1704249643372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230103-fastapi" />
+    <SUITE FILE_PATH="coverage/python3$07_selenium.coverage" NAME="07_selenium元素定位 Coverage Results" MODIFIED="1713315926210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pratice_2024" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$.coverage" NAME="验证编码问题 Coverage Results" MODIFIED="1704962496226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230821-excel" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$3_xlwings.coverage" NAME="3_xlwings Coverage Results" MODIFIED="1704962385890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230821-excel" />
+    <SUITE FILE_PATH="coverage/python3$class_jicheng.coverage" NAME="class-jicheng Coverage Results" MODIFIED="1698891469456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230809" />
+    <SUITE FILE_PATH="coverage/python3$230621___1_.coverage" NAME="230621_模拟滚动 (1) Coverage Results" MODIFIED="1687331064020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_study" />
+    <SUITE FILE_PATH="coverage/python3$pytest_for_test_login1_TestLogin_test_login.coverage" NAME="pytest for test_login1.TestLogin.test_login Coverage Results" MODIFIED="1709002373136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/testCase" />
+    <SUITE FILE_PATH="coverage/python3$01_property.coverage" NAME="01_property学习 Coverage Results" MODIFIED="1714381850087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pratice_2024" />
+    <SUITE FILE_PATH="coverage/python3$cookies.coverage" NAME="cookies原生态 Coverage Results" MODIFIED="1708926012427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230602/lib" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$1.coverage" NAME="1 Coverage Results" MODIFIED="1704433009723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230815" />
+    <SUITE FILE_PATH="coverage/python3$pytest_in_test_shop1_py.coverage" NAME="pytest in test_shop1.py Coverage Results" MODIFIED="1709192169982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/testCase" />
+    <SUITE FILE_PATH="coverage/python3$1.coverage" NAME="1 Coverage Results" MODIFIED="1692671583826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230821-excel" />
+    <SUITE FILE_PATH="coverage/python3$client_B.coverage" NAME="client_B Coverage Results" MODIFIED="1689056978444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230711-socket" />
+    <SUITE FILE_PATH="coverage/python3$pytest_for_test_login_TestLogin.coverage" NAME="pytest for test_login.TestLogin Coverage Results" MODIFIED="1709012126396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/testCase" />
+    <SUITE FILE_PATH="coverage/python3$keyboard.coverage" NAME="keyboard Coverage Results" MODIFIED="1687673021604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../Program Files/Python39/Lib/site-packages/pywinauto" />
+    <SUITE FILE_PATH="coverage/python3$11.coverage" NAME="11 Coverage Results" MODIFIED="1713853689405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tmp_2023" />
+    <SUITE FILE_PATH="coverage/python3$skserver.coverage" NAME="skserver Coverage Results" MODIFIED="1692346884443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230711-socket" />
+    <SUITE FILE_PATH="coverage/python3$230627_js.coverage" NAME="230627_js操作 Coverage Results" MODIFIED="1687861188664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_study" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$tYaml.coverage" NAME="tYaml Coverage Results" MODIFIED="1705024767932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/20240112-yaml研究" />
+    <SUITE FILE_PATH="coverage/python3$login.coverage" NAME="login Coverage Results" MODIFIED="1714382918849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/libs" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$verify_yml.coverage" NAME="verify_yml Coverage Results" MODIFIED="1705039504019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/231124" />
+    <SUITE FILE_PATH="coverage/python3$t1.coverage" NAME="t1 Coverage Results" MODIFIED="1714114587637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/20240311-反射" />
+    <SUITE FILE_PATH="coverage/python3$test230711.coverage" NAME="test230711 Coverage Results" MODIFIED="1689072575005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230711-socket" />
+    <SUITE FILE_PATH="coverage/python3$handle_data.coverage" NAME="handle_data Coverage Results" MODIFIED="1688033493024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DeliverySystem完整代码/DeliverySystem完整代码/utils" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$read_html.coverage" NAME="read_html Coverage Results" MODIFIED="1705024067013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230711-读取某一页面所有text" />
+    <SUITE FILE_PATH="coverage/python3$skclient.coverage" NAME="skclient Coverage Results" MODIFIED="1692346888095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230711-socket" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$t0717.coverage" NAME="t0717 Coverage Results" MODIFIED="1704348130014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230706" />
+    <SUITE FILE_PATH="coverage/python3$22.coverage" NAME="22 Coverage Results" MODIFIED="1713776420594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tmp_2023" />
+    <SUITE FILE_PATH="coverage/python3$001.coverage" NAME="001 Coverage Results" MODIFIED="1700114298441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230809" />
+    <SUITE FILE_PATH="coverage/python3$20240123_km.coverage" NAME="20240123-验证km文件解析 Coverage Results" MODIFIED="1706172875816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/20240123-解析km文件" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$test0712.coverage" NAME="test0712 Coverage Results" MODIFIED="1704348387701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230712-socket端口扫描" />
+    <SUITE FILE_PATH="coverage/python3$t0717.coverage" NAME="t0717 Coverage Results" MODIFIED="1692347885044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230706" />
+    <SUITE FILE_PATH="coverage/python3$new.coverage" NAME="new Coverage Results" MODIFIED="1714036156886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230712-GUI窗口" />
+    <SUITE FILE_PATH="coverage/python3$test_login1.coverage" NAME="test_login1 Coverage Results" MODIFIED="1709015490054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/testCase" />
+    <SUITE FILE_PATH="coverage/python3$00_test.coverage" NAME="00_test Coverage Results" MODIFIED="1712828555219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230821-读取excel内容各种方法" />
+    <SUITE FILE_PATH="coverage/python3$handle_loguru.coverage" NAME="handle_loguru Coverage Results" MODIFIED="1709015133685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/utils" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$login.coverage" NAME="login Coverage Results" MODIFIED="1701150115842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/libs" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$base_path.coverage" NAME="base_path Coverage Results" MODIFIED="1704346485574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230602/common" />
+    <SUITE FILE_PATH="coverage/python3$test_login.coverage" NAME="test_login Coverage Results" MODIFIED="1709806739965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/testCase" />
+    <SUITE FILE_PATH="coverage/python3$230620___1_.coverage" NAME="230620_模拟鼠标的操作 (1) Coverage Results" MODIFIED="1687329848904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_study" />
+    <SUITE FILE_PATH="coverage/python3$230625_.coverage" NAME="230625_显式等待 Coverage Results" MODIFIED="1687743043834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_study" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$_map_reduce_zip.coverage" NAME="-map-reduce-zip Coverage Results" MODIFIED="1704967495983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/231124" />
+    <SUITE FILE_PATH="coverage/python3$cs_client_.coverage" NAME="cs_client_指定换行结尾 Coverage Results" MODIFIED="1693815848341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230711-socket" />
+    <SUITE FILE_PATH="coverage/python3$tYaml.coverage" NAME="tYaml Coverage Results" MODIFIED="1713958236139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/20240112-yaml引用研究2" />
+    <SUITE FILE_PATH="coverage/python3$encrypt_data.coverage" NAME="encrypt_data Coverage Results" MODIFIED="1690359953891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DeliverySystem完整代码/utils" />
+    <SUITE FILE_PATH="coverage/python3$20240428_.coverage" NAME="20240428_验证输入框内容 Coverage Results" MODIFIED="1714285268806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230712-GUI窗口" />
+    <SUITE FILE_PATH="coverage/python3$02_test.coverage" NAME="02-test Coverage Results" MODIFIED="1710772291615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/selenium_集合" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$_yaml.coverage" NAME="-验证yaml嵌套 Coverage Results" MODIFIED="1705039124880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/231124" />
+    <SUITE FILE_PATH="coverage/python3$0125_json.coverage" NAME="0125-json Coverage Results" MODIFIED="1706264218509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/20240123-解析km文件" />
+    <SUITE FILE_PATH="coverage/python3$3_xlwings.coverage" NAME="3_xlwings Coverage Results" MODIFIED="1712568051829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230821-excel" />
+    <SUITE FILE_PATH="coverage/python3$cookiesession.coverage" NAME="cookie用session替换 Coverage Results" MODIFIED="1690870375522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230602/lib" />
+    <SUITE FILE_PATH="coverage/python3$singleton.coverage" NAME="singleton Coverage Results" MODIFIED="1714270624552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pratice_2024" />
+    <SUITE FILE_PATH="coverage/python3$baseApi.coverage" NAME="baseApi Coverage Results" MODIFIED="1705990757867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/松勤课堂/DeliverySystem完整代码/common" />
+    <SUITE FILE_PATH="coverage/python3$05_.coverage" NAME="05-反射学习 Coverage Results" MODIFIED="1714112072604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/20240311-反射" />
+    <SUITE FILE_PATH="coverage/python3$02_.coverage" NAME="02-给类装配新的方法 Coverage Results" MODIFIED="1712567619315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/20240311-反射" />
+    <SUITE FILE_PATH="coverage/python3$test02.coverage" NAME="test02 Coverage Results" MODIFIED="1692347951971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230706" />
+    <SUITE FILE_PATH="coverage/3_xlwings_py$study_231219.coverage" NAME="study_231219 Coverage Results" MODIFIED="1704249461034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/231124" />
+    <SUITE FILE_PATH="coverage/python3$10_map_reduce.coverage" NAME="10_高阶函数map,reduce等学习 Coverage Results" MODIFIED="1713855913480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pratice_2024" />
+    <SUITE FILE_PATH="coverage/python3$test230727.coverage" NAME="test230727 Coverage Results" MODIFIED="1692411077973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tmp_2023" />
+    <SUITE FILE_PATH="coverage/python3$230721_url.coverage" NAME="230721_url Coverage Results" MODIFIED="1714265755745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../编译exe" />
+    <SUITE FILE_PATH="coverage/python3$gui.coverage" NAME="gui页面设计 Coverage Results" MODIFIED="1714031029485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/230712-GUI窗口" />
+  </component>
+</project>

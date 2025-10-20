@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+
+    obj = {
+        name: "wht",
+        sayHi2: function () {
+            let i = 0
+            const cnt = () => {
+                console.log(this)  //指向obj2
+            }
+            cnt()
+        },
+        sayHi1: (() => {
+            console.log(this)
+        }),
+        sayHi3: (
+            () => {
+                // console.log(this)
+                (() => {
+                    console.log(this)
+                })()
+            }
+        )
+
+
+    }
+    // console.log(obj.sayHi2);
+    // obj.sayHi2()
+    // console.log(obj.name);
+    // obj.sayHi1()
+    obj.sayHi3()
+
+</script>
+
+</body>
+</html>

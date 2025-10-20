@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrap {
+            width: 300px;
+            margin: 100px auto 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px solid #c0c0c0;
+            width: 300px;
+        }
+
+        th,
+        td {
+            border: 1px solid #d0d0d0;
+            color: #404060;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #09c;
+            font: bold 16px "微软雅黑";
+            color: #fff;
+        }
+
+        td {
+            font: 14px "微软雅黑";
+        }
+
+        tbody tr {
+            background-color: #f0f0f0;
+        }
+
+        tbody tr:hover {
+            cursor: pointer;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <table>
+        <thead>
+        <tr>
+            <th>
+                <input type="checkbox" id="j_cbAll"/>
+            </th>
+            <th>商品</th>
+            <th>价钱</th>
+        </tr>
+        </thead>
+        <tbody id="j_tb">
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>小米Mix2s</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>华为P30</td>
+            <td>3800</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>iPad Air</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>小米手环</td>
+            <td>200</td>
+        </tr>
+
+        </tbody>
+    </table>
+    <input type="button" value="  反 选  " id="btn">
+</div>
+<script>
+    const checkAll = document.querySelector("#j_cbAll")
+    // console.log(checkAll.checked)
+    const cks = document.querySelectorAll("#j_tb input[type='checkbox']")
+    //大复选框控制小复选框
+    checkAll.addEventListener("click", function () {
+        console.log(this.checked)
+        // for (let i = 0; i < cks.length; i++) {
+        //     cks[i].checked = this.checked
+        // }
+        cks.forEach(ck => ck.checked = this.checked)
+
+    })
+
+    //小复选框控制大复选框
+    // for (let i = 0; i < cks.length; i++) {
+    //     cks[i].addEventListener("click", function () {
+    //         console.log(document.querySelectorAll("#j_tb input:checked"))
+    //         let checked = document.querySelectorAll("#j_tb input:checked")
+    //         console.log(checked)
+    //         // if (checked.length === cks.length) {
+    //         //     checkAll.checked = true
+    //         // } else {
+    //         //     checkAll.checked = false
+    //         // }
+    //
+    //         //简化版   true / false
+    //         checkAll.checked = checked.length === cks.length
+    //     })
+    // }
+
+
+    // 使用事件委托实现定位复选框被选中
+    const  tb = document.querySelector("#j_tb")
+    tb.addEventListener("click",function (event){
+        if(event.target && event.target.type === "checkbox"){
+            // console.log(cks,typeof cks)
+            // for(let i=0;i<cks.length;i++){
+            //     console.log(cks[i],typeof cks[i])
+            // }
+            // console.log(Array.from(cks), Array.from(cks)===Array)
+            const allChecked = Array.from(cks).every(ck => ck.checked)
+            checkAll.checked = allChecked
+        }
+    })
+
+
+    const a = '1234'
+    // console.log(Array.from(a), Array.from(a) instanceof Array)  //将一个对象转换位数组对象
+    const b = [1, 1,1,1,'']
+    console.log(b.every(ch => ch));
+    console.log(b.some(ch => ch));
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

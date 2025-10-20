@@ -1,0 +1,9 @@
+2024-02-29 18:00:42,baseApi(line:48),INFO|模块名:Login,接口名:login
+    响应状态码:200,
+    请求url:http://42.192.62.8:8082/account/sLogin,
+    请求方法:POST
+2024-02-29 18:00:42,baseApi(line:56),ERROR|Traceback (most recent call last):
+  File "D:\PythonStudy\python3\松勤课堂\DeliverySystem完整代码\common\baseApi.py", line 41, in request_send
+    __config_data = self.data[inspect.stack()[1][3]]
+KeyError: 'query1'
+

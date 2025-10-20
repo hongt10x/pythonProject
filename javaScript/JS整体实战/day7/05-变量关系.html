@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+    //动态参数   arguments
+    function getsum(){
+        //arguments是个伪数组
+        console.log(arguments,arguments[2])
+        console.log(arguments.callee)
+        for (let i=0;i<arguments.length;i++){
+            console.log(i,arguments[i])
+        }
+        for (let i=0;i<6;i++){
+            console.log(i,arguments[i])
+            // console.log(arguments[i].callee)
+        }
+    }
+    // getsum(1,3,4,5)
+
+//剩余参数，后是真数组
+function getSum(...arr){
+    console.log(arr)
+}
+getSum(1,3,4)
+function getSum1(a,b,...arr){ //使用arr不用写...
+    console.log(a,b,arr)
+    arr.push(99)
+    console.log(arr)
+}
+getSum1(1,3,4)
+
+
+
+    //展开运算符(...)  ，不改变原数组
+    const arr3 = [1,3,3,5]
+    console.log(...arr3)
+    console.log(Math.max(...arr3))
+    const arr4 = ['a','b']
+    console.log([...arr4, ...arr3])
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+    const obj = {
+        name1: "wht",
+        age1: 19
+    }
+    //必须与对象的属性名一致，否则无法正常解构，且不能与外部变量名一样；
+    const {name, age} = {name: "wht", age: 19}
+    console.log(name, age)
+
+    const {name1,} = obj
+    console.log(name1,)
+    const obj1 = {
+        name1: "wht11",
+        age1: 19
+    }
+
+    console.log("==============")
+    const {name1: na, age1: ag} = obj1  //如有与外部变量重复，则起别名
+    console.log(name1)
+    console.log(na, ag)
+
+    const obj2 = {
+        name1: "wht2",
+        age1: 30,
+        family: {
+            mother: '猪妈妈',
+            father: '猪爸爸',
+            sister: '乔治'
+        }
+    }
+    const family = null
+    const mother = 'alex'
+    // 对嵌套对象深层解构时，无需关注key的重复，如family=null，与key不冲突，我们取不到key中的family整体
+    // const {name1: name2, age1: age2, family: fa, family: {mother: mother2, father, sister}} = obj2
+    const {name1: name2, age1: age2,  family: {mother: mother2, father, sister}} = obj2
+    console.log(name2, age2)
+    console.log(mother2, father, sister)
+    // console.log(fa)
+    console.log(family)  //外部已经有个family，不能用次family
+    // 对嵌套对象解构时，如果key是对象不做解构时，也需要注意不要与外部变量重复
+    const {name1: n2, age1: a2, family: f2} = obj2
+    console.log(n2, a2, family, f2)
+
+    const {name1: nn1, age1: aa1} = obj2  //无须全部取出！！！！
+    console.log(nn1, aa1)
+
+    const msg = {
+        data: [
+            {
+                id: 1,
+                page: 100
+            },
+            {
+                id: 2,
+                page: 200
+            }
+        ]
+    }
+
+    function render({data:myData}) {  //直接解构msg对象中的data
+        console.log(myData)
+    }
+
+    render(msg)
+</script>
+
+</body>
+</html>

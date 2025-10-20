@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .box1 {
+      height: 300px;
+      width: 300px;
+      background-color: #3cdc10;
+    }
+    .box2 {
+      height: 150px;
+      width: 150px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+<div class="box1" data-name="boxa">
+  <div class="box2" data-name="boxb"></div>
+</div>
+<div class="box3" data-name="boxc"></div>
+<script>
+  //通过元素属性定位所有相同的name
+const items = document.querySelectorAll("[data-name]")
+console.log(items)
+for (let i=0;i<items.length;i++){
+  console.log(items[i])
+}
+</script>
+</body>
+</html>

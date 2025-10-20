@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<ul class="nav">
+    <li>123</li>
+  <li>我的产品</li>
+  <li>产品展示</li>
+  <li>联系方式</li>
+
+
+</ul>
+<script>
+  const  lis = document.querySelectorAll(".nav li")
+  console.log(lis)
+  for(let i=0;i<lis.length;i++){
+    console.log(lis[i].textContent);
+  }
+
+  const li = document.querySelector('.nav li')
+  console.log(li.innerText, typeof li.innerText)
+  setTimeout(()=>{li.innerText = "我在做测试修改。。。"
+  li.style.color = 'red'},3000 )
+
+  console.log(li.innerHTML) //解析标签
+  li.innerHTML = "<strong>我在做标签测试</strong>"
+  console.log(li.innerHTML)
+</script>
+</body>
+</html>

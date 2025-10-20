@@ -1,0 +1,10 @@
+a1: a1
+b1:
+  type: include_yaml
+  file: "./child.yml"
+c1:
+  - type: include_yaml
+    file: "./child.yml"
+
+  - type: include_yaml
+    file: "./child.yml"

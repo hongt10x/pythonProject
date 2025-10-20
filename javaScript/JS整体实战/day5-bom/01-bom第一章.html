@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .xx {
+            display: flex;
+            justify-content: center; /*行居中*/
+            align-items: center; /*列居中*/
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: 1px solid black;
+            border-radius: 10px; /*//圆角*/
+            margin-top: inherit;
+
+        }
+
+        .yy {
+            position: absolute;
+            width: 60px;
+            height: 100px;
+            background-color: #3cdc10;
+            border-radius: 10px; /*//圆角*/
+        }
+    </style>
+</head>
+<body>
+<!--//延迟函数-->
+<div class="xx">
+    <div class="yy"></div>
+</div>
+<script>
+    console.log("浏览器已启动")
+    // let id=setTimeout(function (){
+    //   console.log("时间到了")},3000)
+    // console.log(id)
+
+    //延迟自动关闭
+    setTimeout(function () {
+        const div = document.querySelector(".xx")
+        div.style.display = "none"
+    }, 5000)
+
+
+</script>
+</body>
+</html>

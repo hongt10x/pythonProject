@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+        /* 样式省略，以保持简洁 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .user-info {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .delete-btn {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            float: right;
+        }
+
+        .delete-btn:hover {
+            background-color: #da190b;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>用户就业信息</h1>
+
+    <!-- 输入表单 -->
+    <form id="employmentForm">
+        <div class="form-group">
+            <label for="name">姓名:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="company">公司:</label>
+            <input type="text" id="company" name="company" required>
+        </div>
+        <div class="form-group">
+            <label for="position">职位:</label>
+            <input type="text" id="position" name="position" required>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="提交信息">
+        </div>
+    </form>
+
+    <!-- 用户信息显示区域 -->
+    <div id="userInfoContainer"></div>
+</div>
+
+
+<script>
+    // 存储用户信息的数组（在实际应用中，这将是数据库或服务器端的存储）
+    let userInfoArray = [];
+
+    // 获取表单元素
+    const employmentForm = document.getElementById('employmentForm');
+
+    // 提交表单时的事件处理
+    employmentForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // 阻止表单的默认提交行为
+
+        // 获取表单数据
+        const name = document.getElementById('name').value;
+        const company = document.getElementById('company').value;
+        const position = document.getElementById('position').value;
+
+        // 创建用户信息对象
+        const userInfo = {
+            name: name,
+            company: company,
+            position: position,
+            id: userInfoArray.length + 1 // 简单的ID生成，仅用于前端展示
+        };
+
+        // 将用户信息添加到数组中
+        userInfoArray.push(userInfo);
+
+        // 清空表单
+        employmentForm.reset();
+
+        // 显示用户信息
+        displayUserInfo();
+    });
+
+    // 显示用户信息的函数
+    function displayUserInfo() {
+        const userInfoContainer = document.getElementById('userInfoContainer');
+        userInfoContainer.innerHTML = ''; // 清空之前的信息
+
+        userInfoArray.forEach(userInfo => {
+            // 创建用户信息的HTML元素
+            const userInfoDiv = document.createElement('div');
+            userInfoDiv.className = 'user-info';
+
+            const userInfoContent = `
+                    <p><strong>姓名:</strong> ${userInfo.name}</p>
+                    <p><strong>公司:</strong> ${userInfo.company}</p>
+                    <p><strong>职位:</strong> ${userInfo.position}</p>
+                    <button class="delete-btn" onclick="deleteUserInfo(${userInfo.id})">删除</button>
+                `;
+
+            userInfoDiv.innerHTML = userInfoContent;
+
+            // 将用户信息元素添加到容器中
+            userInfoContainer.appendChild(userInfoDiv);
+        });
+    }
+
+    // 删除用户信息的函数
+    function deleteUserInfo(id) {
+        userInfoArray = userInfoArray.filter(userInfo => userInfo.id !== id);
+        displayUserInfo(); // 重新显示用户信息以更新视图
+    }
+
+    // 初始化时显示已存在的用户信息（如果有的话，这里为空数组所以不会显示）
+    displayUserInfo();
+</script>
+
+</body>
+</html>

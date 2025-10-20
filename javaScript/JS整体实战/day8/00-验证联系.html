@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+
+    //无箭头函数时，this不可用
+// const obj = {
+//   count: 10,
+//   doSomethingLater() {
+//       num = 100
+//     setTimeout(function () {
+//       // 此函数在 window 作用域下执行
+//         console.log(typeof this)
+//         console.log(this.num)
+//       this.count++;
+//       console.log(this.count);
+//     }, 300);
+//   },
+// };
+//
+// obj.doSomethingLater(); // 输出“NaN”，因为“count”属性不在 window 作用域下。
+
+
+//利用箭头函数，保留了this的重要意义
+
+// const obj = {
+//   count: 10,
+//   doSomethingLater() {
+//     // 该方法语法将“this”与“obj”上下文绑定。
+//     setTimeout(() => {
+//       // 由于箭头函数没有自己的绑定，
+//       // 而 setTimeout（作为函数调用）本身也不创建绑定，
+//       // 因此使用了外部方法的“obj”上下文。
+//         console.log(typeof this)
+//       this.count++;
+//       console.log(this.count);
+//     }, 300);
+//   },
+// };
+//
+// obj.doSomethingLater(); // 输出 11
+
+    function Star(){
+        // this.name = "alex"
+        age = 18
+    }
+
+    console.log(Star.age)
+    const s1 = new Star()
+    console.log(s1,s1.constructor())
+    console.log(s1.__proto__)
+    console.log(s1.age)
+
+    console.log("======================")
+
+    function Star1(){
+        this.name = "alex"
+        this.age = 18
+    }
+
+    const s2 = new Star1()
+    console.log(s2,s2.constructor())
+    console.log(s2.__proto__)
+    // console.log(s2.age)
+
+    console.log("======================")
+    function Star2(){
+        console.log(this)
+    }
+
+    const s3 =  Star2
+    s3()
+    console.log(s3.__proto__)
+
+</script>
+
+</body>
+</html>

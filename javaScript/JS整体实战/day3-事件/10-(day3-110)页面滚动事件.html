@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            padding-bottom: 100px;
+            height: 3000px;
+        }
+        div {
+            margin: 100px;
+            overflow: scroll;
+            height: 100px;
+            width: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div>
+    我里面有很多很多的文字
+    我里面有很多很多的文字
+    我里面有很多很多的文字
+    我里面有很多很多的文字
+    我里面有很多很多的文字
+    我里面有很多很多的文字
+    我里面有很多很多的文字
+    我里面有很多很多的文字
+    我里面有很多很多的文字
+    我里面有很多很多的文字
+
+</div>
+<script>
+    //可自定义初始头部的高度
+    document.documentElement.scrollTop = 1000
+    window.addEventListener("scroll", function (){
+      console.log("我在滚动")
+        //已html参考，卷去头部
+        const n = document.documentElement.scrollTop
+        console.log(n, typeof n)
+    })
+
+
+
+    const div = document.querySelector("div")
+    div.addEventListener("scroll",function (){
+        // console.log(1111)
+        // srollTop 被卷去的头部
+        console.log(div.scrollTop)
+    })
+
+
+
+</script>
+</body>
+</html>

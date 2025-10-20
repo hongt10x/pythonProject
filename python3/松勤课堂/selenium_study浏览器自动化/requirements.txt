@@ -1,0 +1,7 @@
+selenium==4.3.0
+pytest
+allure-pytest
+pyyaml
+loguru
+pytest-assume
+objprint

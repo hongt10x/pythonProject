@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button class="btn">按钮</button>
+<script>
+  const  btn = document.querySelector(".btn")
+  console.log(btn)
+  btn.addEventListener("click",function (){
+    console.log(this)
+    console.log(this.innerHTML)
+      this.style.color = 'red'
+      setTimeout(() =>{this.style.color = 'black'},3000)
+
+  })
+  function fn(){
+    console.log(this)
+  }
+  fn()
+</script>
+</body>
+</html>

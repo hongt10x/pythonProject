@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+    function Star(name, age) {
+        this.name = name
+        this.age = age
+        this.sing = function () {
+            console.log(this, "唱歌")
+        }
+    }
+
+    console.log(Star.prototype)
+    Star.prototype.sing1 = function (){
+        console.log(this, "唱歌啦")
+    }
+    console.log(Star.prototype)
+    Star.prototype['sing2'] = function (){
+        console.log(this, "唱歌啦")
+    }
+    ldh = new Star("刘德华", 55)
+    zxy = new Star("张学友", 58)
+    ldh.sing()
+    console.log(ldh.sing === zxy.sing)
+    console.log(ldh.sing1 === zxy.sing1)
+
+</script>
+
+</body>
+</html>

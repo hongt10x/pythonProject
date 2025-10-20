@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    console.log(Math.floor(1.1))
+    console.log(Math.floor(1.7))
+
+    // console.log(Math.ceil(1.1))
+    // console.log(Math.floor(Math.random()))
+    //
+    console.log(Math.random())
+
+    function getNum(min, max) {
+        return Math.floor(Math.random() * (max - min )) + min
+    }
+
+    console.log(getNum(1, 2))
+    // console.log(getNum(1, 4))
+
+    var arr = ['alex', 'niuniu', 'xiaoxiong', 'dalang']
+    console.log(arr[getNum(0, arr.length - 1)])
+</script>
+</body>
+</html>

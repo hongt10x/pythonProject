@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            background: #006699;
+
+        }
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<input type="text" id="new_test" required>
+<button id="btn">提交</button>
+<script>
+    const inp = document.querySelector("input")
+    const btn1 = inp.nextElementSibling
+    console.log(inp)
+    console.log(btn1)
+    const btn = document.querySelector("#btn")
+    btn1.addEventListener("click",(e)=>{
+        // e.preventDefault()  //阻止默认行为
+        console.log(location.href)
+        console.log(123)
+
+    })
+
+
+// const div = document.createElement("div")
+// console.log(document.body.appendChild(div));
+// div.innerHTML = "我是新增的div"
+//
+// document.body.appendChild(div.cloneNode(true))
+// const div2 = document.querySelector("div:last-child")
+// console.log(div2)
+// div2.innerHTML = "我是clone的新的div"
+// div2.appendChild(div.cloneNode(true))
+
+
+</script>
+
+</body>
+</html>

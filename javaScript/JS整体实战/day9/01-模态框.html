@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+        /* 为外层模型设置样式 */
+        .model {
+            width: 300px; /* 设置宽度 */
+            padding: 20px; /* 设置内边距 */
+            border: 1px solid #ccc; /* 设置边框 */
+            border-radius: 5px; /* 设置圆角 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 设置阴影 */
+            background-color: #fff; /* 设置背景颜色 */
+            position: relative; /* 设置相对定位，以便内部元素可以绝对定位 */
+            margin: 50px auto; /* 居中并设置外边距 */
+            z-index: 1000; /* 设置层叠顺序，确保模型显示在其他内容之上 */
+        }
+
+        /* 为头部设置样式 */
+        .model .header {
+            font-size: 18px; /* 设置字体大小 */
+            font-weight: bold; /* 设置字体加粗 */
+            margin-bottom: 10px; /* 设置下边距 */
+        }
+
+        /* 为关闭按钮（图标）设置样式 */
+        .model i {
+            position: absolute; /* 设置绝对定位 */
+            top: 10px; /* 设置距离顶部的距离 */
+            right: 10px; /* 设置距离右侧的距离 */
+            cursor: pointer; /* 设置鼠标悬停时显示为手形，表示可点击 */
+            color: #aaa; /* 设置颜色 */
+            font-style: normal; /* 取消斜体样式，因为这里用作图标 */
+            /* 可以添加更多样式，如背景、边框等，以模拟一个关闭按钮的外观 */
+        }
+
+        /* 为提示信息设置样式 */
+        .model .body {
+            font-size: 14px; /* 设置字体大小 */
+            color: #333; /* 设置颜色 */
+            /* 可以添加更多样式，如文本对齐、行高等 */
+        }
+    </style>
+</head>
+<body>
+<!--<div class="model">-->
+<!--    <div class="header">提示</div>-->
+<!--    <i>X</i>-->
+<!--    <div class="body">你没有权限</div>-->
+
+<!--</div>-->
+
+<button id="delete">删除</button>
+<button id="login">登录</button>
+
+<script>
+    /*
+    模态框业务：
+    1、模态框Model业务  构造函数
+    2、打开方法open
+    3、关闭方法close
+     */
+
+    function Model(title = "", message = "") {
+        this.modelBox = document.createElement("div")
+        this.modelBox.className = "model"
+        this.modelBox.innerHTML = `
+        <div class="header">${title} <i>X</i></div>
+        <div class="body">${message}</div>
+        `
+        console.log(this.modelBox)
+
+    }
+
+    // new Model("温馨提示","您没有权限删除操作")
+    // new Model("友情提示","您还没有注册账户呢")
+
+    Model.prototype.open = function () {
+
+        //判断模态框中是否有准备新建的盒子，有的话就移除
+        const box = document.querySelector(".model")
+        // console.log("box: ",box)
+        box && box.remove()
+        //把刚创建的modelBox添加到body页面中
+        document.body.append(this.modelBox)
+        //要等待盒子打开显示出来后，才能关闭，所以关闭应该包含在打开内，只能使用箭头函数才能找到实例对象
+        document.querySelector("i").addEventListener("click", () => {
+            this.close()
+        })
+    }
+
+    Model.prototype.close = function () {
+        this.modelBox.remove()
+    }
+
+    document.querySelector("#delete").addEventListener("click", function () {
+        const del = new Model("温馨提示", "您没有权限删除操作")
+        del.open()
+    })
+    document.querySelector("#login").addEventListener("click", function () {
+        const login = new Model("友情提示", "您还没有注册账户呢")
+        login.open()
+    })
+
+
+</script>
+
+</body>
+</html>

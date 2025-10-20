@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+    //替代匿名函数的地方
+    fn()
+
+    function fn() {
+        console.log("fn")
+    }
+
+    // fx()
+    var fx = function () {
+        console.log("fx")
+    }
+
+    // 只有一个参数时，可以省略小括号()
+    const fn1 = x => {
+        console.log(x)
+    }
+    fn1(456)
+
+    //函数体只有一行，可以省略大括号{}，可以省略return
+    const fn2 = (x, y) => x + y
+    let r1 = fn2(8, 2)
+    console.log(r1)
+
+    const fn3 = (x) => {
+        console.log(123)
+        console.log(x)
+        return x * x
+    }
+
+    fn3(1234)
+    console.log(fn3(99))
+
+
+    const fn4 = (uname) => ({name: uname})  //需要添加()，否则箭头函数无法识别函数体与对象
+    console.log(fn4("刘德华"));
+
+
+    obj = {
+        name: "wht",
+        sayHi: function () {
+            console.log(this)
+        }
+    }
+
+    obj.sayHi()
+    console.log("====================")
+
+    //箭头函数没有this，它会根据作用域链找到上一级作用域的this
+    obj1 = {
+        name: "wht",
+        sayHi1: () => {
+            console.log(this)  //指向Window
+        }
+    }
+    obj1.sayHi1()
+    console.log("====================")
+    obj2 = {
+        name: "wht",
+        sayHi2: function () {
+            let i = 0
+            const cnt = () => {
+                console.log(this)  //指向obj2
+            }
+            cnt()
+        }
+
+    }
+    obj2.sayHi2()
+    console.log("====================")
+    const materials = ['Hydrogen', 'Helium', 'Lithium', 'Beryllium'];
+    console.log(materials.map(material => material.length))
+    console.log(materials.map(item => item.length))
+
+    const c = ([a, b] = [10, 20]) => console.log(a, b)  //得到的是个函数，需要调用生效
+    c()
+
+    const [a, b] = [4, 2]
+    d = () => a + b + 100
+    console.log(d())
+    console.log((() => a + b + 1000)())
+
+
+    let callback
+    console.log(callback)
+    callback = callback || (() => {}) // =>由于 => 的优先级低于大多数运算符，因此需要使用括号来避免 callback || () 被解析为箭头函数的参数列表。
+    console.log(callback, typeof callback)
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+
+    // 方案一
+    /*
+const Person = {
+    eyes:2,
+    head:1
+}
+function Woman(){
+
+}
+function Man(){
+
+}
+
+Woman.prototype = Person
+console.log(Woman.prototype)
+Woman.prototype.constructor = Woman
+Woman.prototype.baby = ()=>console.log("小孩")
+wn = new Woman()
+wn.baby()
+
+Man.prototype = Person
+console.log(Man.prototype)
+Man.prototype.constructor = Man
+ma = new Man()  // Man也同样继承了Woman.baby的功能，不符合要求；因为他们的继承对象都来自字面量Person
+
+*/
+
+
+    function Person() {
+        this.eyes = 2
+        this.head = 1
+    }
+    function Woman(){
+        // this.age = 22
+    }
+    function Man(){}
+
+    Woman.prototype = new Person()
+    console.log(Woman.prototype)
+    // Woman.prototype.baby = ()=> console.log("生小孩")
+    Object.prototype.baby = ()=> console.log("生小孩")  //Object位于原型链最顶端
+    wn1 = new Woman()
+    console.log(wn1)
+    wn1.baby()
+    // Woman.prototype.constructor = Woman
+
+
+    Man.prototype = new Person()
+    const m1 = new Man()
+    console.log(m1)
+    m1.baby()
+
+
+
+    // const Person = {
+    //     eyes: 2,
+    //     head: 1
+    // }
+    //
+    // function Woman() {
+    //     this.baby = function () {
+    //         console.log("生小孩")
+    //     }
+    // }
+    //
+    // function Man() {
+    //
+    // }
+    //
+    // Woman.prototype = Person
+    // // console.log(Woman.prototype)
+    // // console.log(Woman)
+    // Man.prototype = Person
+    // // console.log(Man.prototype)
+    // // console.log(Man)
+    //
+    // const w1 = new Woman()
+    // const w2 = new Woman()
+    // const m = new Man()
+    // console.log(w1)
+    // console.log(w2)
+    // console.log(m)
+
+
+</script>
+
+</body>
+</html>

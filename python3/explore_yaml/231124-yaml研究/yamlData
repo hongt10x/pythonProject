@@ -1,0 +1,11 @@
+os: Android
+osVersion: 10
+account:
+  username: xiaoqq
+  password: 123456
+deviceName: null
+appPackage: ~
+bool1: True
+
+
+

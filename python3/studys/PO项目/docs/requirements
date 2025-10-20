@@ -1,0 +1,6 @@
+# pip install -r requirements.txt
+# pip uninstall -r requirements.txt
+selenium==4.3.0
+pytest
+pyyaml
+loguru

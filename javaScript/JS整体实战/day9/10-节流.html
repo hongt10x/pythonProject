@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            font-size: large;
+            background-color: green;
+            border: solid 2px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="box"></div>
+</div>
+<script src="lodash.min.js"></script>
+<script>
+    // _.throttle  节流
+
+    const box = document.querySelector(".box")
+    let i = 1
+
+    function mouseMove() {
+        box.innerHTML = i++
+    }
+
+
+    //lodash库实现节流操作，1000ms内只实现一次操作，多的不执行
+    // box.addEventListener("mousemove", _.throttle(mouseMove, 1000))
+
+
+    //自定义节流函数
+
+    function throttle(fn,t){
+        let timer = null
+        return ()=>{
+            console.log(timer)
+            if(!timer){
+                timer = setTimeout(()=>{
+                    fn()
+                    timer = null
+                    // clearTimeout(timer) //开启的定时器内部无法使用clearTimeout()方法
+                    // console.log(timer)
+
+
+                }, t)
+            }
+        }
+        // return inner
+    }
+    box.addEventListener("mousemove",throttle(mouseMove, 3000))
+
+
+</script>
+
+</body>
+</html>

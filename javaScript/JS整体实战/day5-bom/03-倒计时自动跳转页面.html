@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<a href="https://www.itcast.cn">支付成功，开始倒计时跳转到首页</a>
+<script>
+    const a = document.querySelector("a")
+    let num = 6
+    let timeId = setInterval(function () {
+        num--
+        a.innerHTML = `支付成功<span>${num}秒</span>后自动跳转到首页`
+        if (num === 0) {
+            clearInterval(timeId)
+            // location.href = a.href
+        }
+    }, 1000)
+
+</script>
+
+</body>
+</html>

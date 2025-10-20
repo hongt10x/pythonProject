@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //ctrl+shift+alt+left mouse
+    // let age
+    // age = 19
+    // console.log(age)
+    // console.log(age)
+    // console.log(age)
+    // let age1, age2 = 18,29
+     let arr = [1,3,5,6,678,8,7]
+    console.log(arr.splice(1, 2))
+      console.log(arr)
+    //   document.write(`<div class="box">`)
+    //   document.write(`</div>`)
+
+    // 具名函数的调用可以在任意位置
+    fn()
+
+    function fn() {
+        console.log("test")
+    }
+
+    // 匿名函数的调用只能在声明之后
+
+    // fn2()
+    fn2 = function () {
+        console.log("我是匿名函数")
+    };
+    fn2();
+
+    (function () {
+        console.log("我是立即执行函数")
+    })();
+
+
+</script>
+</body>
+</html>

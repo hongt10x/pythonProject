@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+    const arr = ['red','green','yellow']
+    //forEach 可遍历数组，无返回值
+    const arr1 = arr.forEach(function (item, index){
+        console.log(item,index)
+        return item
+    });
+    console.log(arr1) //undefined
+
+    //map 可遍历数组，有指定返回值
+    const arr2 = arr.map(function (item,index) {
+        console.log(item, index)
+        return { index,item } //自然封装为列表对象
+        // return {i:index, it: item}
+    })
+    console.log(arr2) // ['red', 'green', 'yellow']
+    console.log(arr2[0].item)
+</script>
+
+</body>
+</html>

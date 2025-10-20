@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+  function Star(uname,age,sex){
+    this.name = uname
+    this.age = age
+    this.sex = sex
+    this.sing = function (sang){
+      console.log(sang)}
+  }
+
+  var ldh = new Star("刘德华",55,"男")
+  console.log(ldh.name)
+  console.log(ldh['age'])
+  console.log(ldh.sex)
+  ldh.sing("冰雨")
+
+</script>
+</body>
+</html>

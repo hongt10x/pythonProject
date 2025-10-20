@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    // <!--  一组相同的数据  -->
+    // var arr = new Array(); //创建一个新的空数组
+    // var arr1 = [1,2,3,'lining',false,];
+    // console.log(arr1)
+    // alert(arr1[4])
+    // alert(arr1.length)
+    var arr2 = [1, 3, 4, 53, 3, 4, 4445, 333, 4]
+    var newArr = [];
+    for (var i = 0; i < arr2.length; i++) {
+        if (arr2[i] > 20) {
+            // 数组可以自动检测长度变化
+            console.log(newArr.length)
+            newArr[newArr.length] = arr2[i]
+        }
+    }
+    console.log(newArr)
+
+</script>
+</body>
+</html>

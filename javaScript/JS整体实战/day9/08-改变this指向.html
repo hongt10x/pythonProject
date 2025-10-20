@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+<button class="btn">按钮</button>
+</div>
+<script>
+    // call方法
+    const obj = {
+        name: "wht"
+    }
+
+    function fn(x, y) {
+        console.log(this)
+        console.log(this.name)
+        console.log(x + y)
+    }
+
+    // fn() //window
+
+    // fn.call()      //指向window
+    // fn.call(obj)  //改变指向obj
+    // fn.call(obj, 1, 3)
+
+
+    // apply方法
+
+    // fn.apply()              //指向window
+    // fn.apply(obj, [3, 5])  //改变指向obj
+    // const arr = [10, 30, 50]
+    // const max = Math.max.apply(null, arr)
+    // console.log(max)
+    // const max2 = Math.max.call(Math, ...arr)
+    // console.log(max2)
+
+
+
+    //bind方法
+
+    // new_fn =  fn.bind(obj) //不会调用函数，返回值是个函数
+    // new_fn()
+    const btn = document.querySelector(".btn")
+    btn.addEventListener("click",function (){
+        console.log(this)  //this指向btn
+        window.setTimeout(function (){
+            console.log(this)  // this指向window
+            this.disabled = true
+        },2000)
+
+
+        window.setTimeout(function (){ //应用
+            console.log(this)  //this被改变指向了btn对象
+            this.disabled = true  //对按钮禁用操作
+        }.bind(btn),2000)  //延迟2s后，setTimeout自动调用函数
+
+
+        window.setTimeout(function (){ //应用
+            console.log(this)  //this被改变指向了btn对象，this在函数外部指向btn
+            this.disabled = false  //对按钮禁用操作
+        }.bind(this),4000)  //延迟2s后，setTimeout自动调用函数
+    })
+
+</script>
+
+</body>
+</html>

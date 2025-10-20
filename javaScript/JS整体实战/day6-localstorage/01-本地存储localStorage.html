@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+
+    // localStorage.setItem("uname","wht")
+    // localStorage.setItem("age",33)
+    //
+    // name = localStorage.getItem("uname")
+    // console.log(name)
+    // setTimeout(function (){
+    //     localStorage.clear()
+    //      age = localStorage.getItem("age")
+    // console.log(age)
+    // },5000)
+    //字符串
+    // age = localStorage.getItem("age")
+    // console.log(age, typeof age)
+    // localStorage.removeItem("age")
+    // age = localStorage.getItem("age")
+    // console.log(age)
+    //
+    // localStorage.setItem("uname","hello world")
+    // console.log(localStorage.getItem("uname"))
+
+
+    //复杂数据类型
+    const obj = {
+        uname: "wanght",
+        age: 33,
+        gender: "男",
+        location: "河南南阳"
+    }
+    console.log(obj.uname1 || [])
+    console.log(obj.uname || [])
+    //将对象转换为JSON字符串格式JSON.stringify(obj)
+    localStorage.setItem("obj", JSON.stringify(obj))
+    o = localStorage.getItem("obj")
+    console.log(o ,typeof o)
+
+    // 将json字符串转为对象JSON.parse(str)
+    o1 = JSON.parse(o)
+    console.log(o1, typeof o1)
+    console.log(o1.uname)
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+name: demo
+hobby: !include ./a.yml
+skill: !include ./c1.yml

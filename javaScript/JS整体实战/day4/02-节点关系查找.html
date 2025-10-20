@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .grandfather {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+
+        .baby {
+            text-align: right;
+            padding-right: 5px;
+            /*display: none;*/
+            height: 40px;
+            width: 40px;
+            /*background-color: yellow;*/
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+<div class="grandfather">
+    <div class="dad">
+        <p></p>
+        <div class="baby">X
+        </div>
+    </div>
+</div>
+<script>
+    const ele = document.querySelector(".baby")
+    // ele.style.border = "black "
+    console.log(ele)
+    console.log(ele.parentNode)
+    console.log(ele.parentNode.parentNode)
+    ele.addEventListener('click', function () {
+        console.log(this)
+        // this.parentNode.parentNode.style.display = 'block'
+        this.parentNode.parentNode.style.display = 'none'
+    })
+</script>
+</body>
+</html>

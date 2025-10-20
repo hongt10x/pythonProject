@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+    /*
+arr =[1,4,5]
+// arr.prototype.map = ()=> console.log("新的map")
+// arr.map()
+
+arr.myfunc = ()=>console.log("自定义方法")
+console.log(arr)
+arr.myfunc()
+arr123 =[1,4,5]
+console.log(arr123.prototype);
+
+     */
+
+
+    function A() {
+        this.nameA = "alex"
+        this.uname = "test"
+    }
+
+    function B() {
+        this.uname = "echo"  // 将覆盖A中的uname值
+    }
+
+    function C() {
+    }
+
+    function D() {
+    }
+
+    function E() {
+    }
+
+    // B.prototype.man = () => console.log("我是B的原型属性")
+    // C.prototype.man = () => console.log("我是C的原型属性")
+    B.prototype = new A()
+    b = new B()
+    console.log(b.uname) //属性被覆盖
+    console.log(b.nameA)
+
+    console.log(b instanceof Object)
+    console.log(b instanceof A)
+    console.log(b instanceof B)
+</script>
+
+</body>
+</html>

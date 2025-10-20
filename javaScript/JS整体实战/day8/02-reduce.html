@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+    obj = [{
+        name: "张三",
+        salary: 10000
+    },
+        {
+            name: "李四",
+            salary: 20000
+        }, {
+            name: "王五",
+            salary: 18000
+        }
+    ]
+
+    const total = obj.reduce(function (prev, current) {
+        console.log(prev, current.salary)
+        return prev + current.salary
+    }, 0)
+    console.log('total: ', total)
+
+    const total1 = obj.reduce((prev, curr) => prev + curr.salary, 0)
+    console.log('total1: ', total1)
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+// function getTime(){
+//     document.querySelector("div").innerHTML = new Date().toLocaleString()
+//     setTimeout(getTime,1000)
+// }
+// // getTime()
+//
+// let i=1
+// function getCount(){
+//     console.log(`第${i}次执行打印`)
+//     if (i>6) {return}
+//     i++
+//     getCount()
+// }
+// getCount()
+
+
+const obj = {
+    name: 'wht',
+    age: 33,
+    hobby: ["读书","打羽球"],
+    family: {
+        father: "老王",
+        mother: "老姚"
+    }
+}
+
+const newobj = {}
+
+//深copy方法1
+function deepCopy(newObj, oldObj){
+    for(let k in oldObj){
+        //需要注意，一定先写Array，因为它也是个对象
+        if (oldObj[k] instanceof Array){
+            newObj[k] = []
+            deepCopy(newObj[k], oldObj[k])
+        }
+        else if (oldObj[k] instanceof Object){
+            newObj[k] = {}
+            deepCopy(newObj[k], oldObj[k])
+        }
+        else{
+            newObj[k] = oldObj[k]
+        }
+    }
+}
+
+deepCopy(newobj, obj)
+console.log(newobj)
+obj.hobby[0] = "跳绳"
+obj.family.father = "王老板"
+console.log(obj)
+console.log(newobj)
+
+//深copy方法2
+
+
+</script>
+
+
+
+</body>
+</html>

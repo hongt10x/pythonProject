@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // const date = new Date()
+    // console.log(date)
+    // const date1 = new Date('2022-4-17 12:00:00')
+    // console.log(date1)
+    // console.log(date1.getFullYear())
+    // console.log(date1.getDate())
+    // console.log(date1.getDay())  //星期 0-6
+    // console.log(date1.getTime())
+    // console.log(date1.getMonth()+1)  //月份0-11
+    function check_format(tip) {
+        return tip >= 10 ? tip : '0' + tip
+    }
+
+    (function () {
+        const d1 = new Date()
+        const h = d1.getHours()
+        const m = d1.getMinutes()
+        const s = d1.getSeconds()
+        console.log(`${check_format(h)}:${check_format(m)}:${check_format(s)}`)
+
+        console.log(d1.toDateString());
+        console.log(d1.toLocaleDateString())
+        console.log(d1.toLocaleTimeString())
+        console.log(d1.toLocaleString())
+    })();
+
+    // d2 = new Date()
+    // console.log(d2.getTime())
+    // console.log(+new Date('2020-1-1'))
+    // console.log(Date.now())
+    // const arr = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"]
+    // console.log(arr[new Date().getDay()])
+
+    function getTime() {
+        const d1 = new Date()
+        const h = d1.getHours()
+        const m = d1.getMinutes()
+        const s = d1.getSeconds()
+        console.log(`${check_format(h)}:${check_format(m)}:${check_format(s)}`)
+    }
+    getTime()  //避免刷新时，延迟1s
+    // setInterval(getTime, 1000)
+</script>
+</body>
+</html>

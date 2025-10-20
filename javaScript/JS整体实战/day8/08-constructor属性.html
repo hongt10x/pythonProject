@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+
+    //构造函数指向prototype，prototype中的structor又指向构造函数
+    //constructor属性指向该原型对象的构造函数！！！
+    //constructor属性指向该原型对象的构造函数！！！
+    //constructor属性指向该原型对象的构造函数！！！
+    function Star(uname) {
+        this.uname = uname
+    }
+
+    console.log(Star.prototype)
+    const s1 = new Star("white horse")
+    // console.log(s1.uname)
+
+    console.log("=========")
+    console.log(s1.constructor)
+    // s1.sing()
+    // s1.dance()
+    // s1.showtalk()
+
+    //要给prototype重新赋多个方法会造成，无法指向构造函数的问题，需要constructor进行处理
+    //这样导致前后实例可能无法正常使用新的原型方法！！！ s1无法使用新的原型方法
+    //这样导致前后实例可能无法正常使用新的原型方法！！！ s1无法使用新的原型方法
+    //这样导致前后实例可能无法正常使用新的原型方法！！！ s1无法使用新的原型方法
+    //这样导致前后实例可能无法正常使用新的原型方法！！！ s1无法使用新的原型方法
+
+    Star.prototype = { //没有constructor就丢失了指向构造函数的方法，需添加
+        // constructor: Star,
+        sing: function () {
+            console.log("唱歌")
+        },
+        dance: function () {
+            console.log("跳舞")
+        }
+    }
+
+    Star.prototype.showtalk = function (){
+        console.log("脱口秀")
+    }
+    console.log(Star.prototype)
+    Star.prototype.sing()
+    Star.prototype.dance()
+
+    const s2 = new Star("black horse")
+    // console.log(s2.uname)
+    s2.sing()
+    s2.dance()
+    s2.showtalk()
+    console.log("=========")
+    console.log(s2.constructor)
+    console.log(s2.constructor instanceof Star)
+    //
+    // console.log(s2.__proto__ === Star.prototype)  //__proto__对象原型
+    // s1.sing() //Uncaught TypeError: s1.sing is not a function
+
+
+
+</script>
+
+</body>
+</html>

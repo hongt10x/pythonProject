@@ -1,0 +1,8 @@
+2024-02-29 18:02:05,baseApi(line:48),INFO|模块名:Login,接口名:login
+    响应状态码:200,
+    请求url:http://42.192.62.8:8082/account/sLogin,
+    请求方法:POST
+2024-02-29 18:02:05,baseApi(line:48),INFO|模块名:Shop,接口名:query
+    响应状态码:200,
+    请求url:http://42.192.62.8:8082/shopping/myShop?page=1&limit=20,
+    请求方法:GET

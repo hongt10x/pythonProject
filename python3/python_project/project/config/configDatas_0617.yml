@@ -1,0 +1,142 @@
+filename: 天工主机+OS+新线表.xlsx
+
+#1、要求各表数据行ip不重复，针对堡垒机表，需要提前做筛选
+update_os: # 对OS表 涉及操作
+  os:
+    sheetName: OS
+    update_info: [ "防护状态", "版本信息", "防病毒运行状态", "天工纳管状态", "自动化服务器状态", "青藤云主机状态", "回收状态", "ping状态", "数据来源" ]
+  host:
+    sheetName: 主机
+    compare_column: 2
+    compare_datas:
+      pattern: [ "通讯IP(必填)", "带内管理IP", "主机名称", "主机类型", "操作系统类型", "操作系统名称", "操作系统版本" ]
+      update_info: [ "IP(必填)", "带内IP(必填)", "主机名(必填)", "服务器虚拟化软件名称", "操作系统类型", "操作系统版本", "数据来源" ]
+      refer_index: 5  # 处理”操作系统版本“
+    compare_status:
+      pattern: [ "通讯IP(必填)", "带内管理IP" ]
+      update_info: [ "IP(必填)", "带内IP(必填)", "天工纳管状态" ]
+      compare_logic: OR
+      refer_index:
+  antivirus: # 4
+    sheetName: 防病毒资产
+    compare_column: 2
+    compare_datas:
+      pattern: [ "IP地址", "IP地址", "虚拟机/终端名称", "操作系统" ]
+      update_info: [ "IP(必填)", "带内IP(必填)", "主机名(必填)", "操作系统类型", "数据来源" ]
+      refer_index: 0
+    compare_status:
+      pattern: [ "IP地址", "IP地址", "防护状态", "版本信息", "运行状态" ]
+      update_info: [ "IP(必填)", "带内IP(必填)", "防护状态", "版本信息", "防病毒运行状态" ]
+      compare_logic: OR
+      refer_index:
+  bastion: # 1
+    sheetName: 堡垒机
+    compare_column: 2
+    compare_datas:
+      pattern: [ "#主机IP", "#主机IP", "主机名称", "操作系统", "所属部门" ]
+      update_info: [ "IP(必填)", "带内IP(必填)", "主机名(必填)", "操作系统版本", "资源分配初始信息", "数据来源" ]
+      refer_index:
+  automation: # 3
+    sheetName: 自动化
+    compare_column: 2
+    compare_datas:
+      pattern: [ "服务器IP", "服务器IP", "服务器名称", "平台类型" ]
+      update_info: [ "IP(必填)", "带内IP(必填)", "主机名(必填)", "操作系统类型", "数据来源" ]
+      refer_index: 2
+    compare_status:
+      pattern: [ "服务器IP", "服务器IP",  "服务器状态" ]
+      update_info: [ "IP(必填)", "带内IP(必填)", "自动化服务器状态" ]
+      compare_logic: OR
+      refer_index:
+  titan: # 2
+    sheetName: 青藤云
+    compare_column: 2
+    compare_datas:
+      pattern: [ "内网IP", "主机IP", "主机名", "操作系统", "业务组" ]
+      help_pattern: [ "内网IP", "主机IP", "外网IP" ]
+      update_info: [ "IP(必填)", "带内IP(必填)", "主机名(必填)", "操作系统版本", "资源分配初始信息", "数据来源" ]
+      refer_index: 2
+    compare_status:
+      pattern: [ "内网IP", "主机IP", "主机状态" ]
+      help_pattern: [ "内网IP", "主机IP", "外网IP" ]
+      update_info: [ "IP(必填)", "带内IP(必填)", "青藤云主机状态" ]
+      compare_logic: OR
+      refer_index:
+  ping:
+    sheetName: ping
+    compare_column: 1
+    compare_status:
+      pattern: [ "主机IP", "ping状态" ]
+      update_info: [ "IP(必填)", "ping状态" ]
+      refer_index:
+  recycle:
+    sheetName: 回收表
+    compare_column: 2
+    compare_status:
+      pattern: [ "业务IP", "主机名" , "回收状态" ]
+      update_info: [ "IP(必填)", "主机名(必填)", "回收状态" ]
+      compare_logic: AND
+      refer_index:
+
+
+
+update_host: #主机表 涉及操作
+  host:
+    sheetName: 主机
+    update_info: [ "OS校对", "OS序号" ]
+  os:
+    sheetName: OS
+    compare_datas_other:
+      pattern: [ "IP(必填)", "带内IP(必填)", "主机名(必填)" ]
+      update_info: [ "通讯IP(必填)", "带内管理IP", "主机名称", "OS校对", "OS序号" ]
+      refer_index: 3  # 比对起始位
+
+
+update_titan: #青藤云表 涉及操作
+  titan:
+    sheetName: 青藤云
+    update_info: [ "OS校对", "OS序号" ]
+  os:
+    sheetName: OS
+    compare_datas_other:
+      pattern: [ "IP(必填)", "带内IP(必填)" ]
+      update_info: [ "内网IP", "主机IP", "OS校对", "OS序号" ]
+      refer_index: 2  # 比对起始位
+
+
+update_bastion: #青藤云表 涉及操作
+  bastion:
+    sheetName: 堡垒机
+    update_info: [ "OS校对", "OS序号" ]
+  os:
+    sheetName: OS
+    compare_datas_other:
+      pattern: [ "IP(必填)", "带内IP(必填)" ]
+      update_info: [ "备注", "#主机IP", "OS校对", "OS序号" ]
+      refer_index: 2  # 比对起始位
+
+
+update_automation: #青藤云表 涉及操作
+  automation:
+    sheetName: 自动化
+    update_info: [ "OS校对", "OS序号" ]
+  os:
+    sheetName: OS
+    compare_datas_other:
+      pattern: [ "IP(必填)" ]
+      update_info: [ "服务器IP", "OS校对", "OS序号" ]
+      refer_index: 1  # 比对起始位
+
+
+update_antivirus: #青藤云表 涉及操作
+  antivirus:
+    sheetName: 防病毒资产
+    update_info: [ "OS校对", "OS序号" ]
+  os:
+    sheetName: OS
+    compare_datas_other:
+      pattern: [ "IP(必填)", "带内IP(必填)" ]
+      update_info: [ "主机", "主机", "OS校对", "OS序号" ]
+      refer_index: 2  # 比对起始位
+
+

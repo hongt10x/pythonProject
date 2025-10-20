@@ -1,0 +1,150 @@
+# -*- coding: utf-8 -*-
+'''
+@Software: PyCharm
+@Project : python39
+@File    : 2025-807-偏函数.py
+@Time    : 2025/8/7 10:30
+@Author  : Echo Wang
+'''
+
+flag = 11
+if flag == 1:
+    ...
+
+
+    def int2(x, base=2):
+        return int(x, base)
+
+
+    print(int2("1000"))
+
+    from functools import partial
+
+    int2 = partial(int, base=2)
+    print(int2("1000"))
+    print(int2("1001"))
+
+flag = 11
+if flag == 1:
+    ...
+
+    from typing import Union
+
+    # def sorted_ignore_case1(x: Union[list, tuple]):
+    #     new_case1 = []
+    #     new_case2 = []
+    #     for i in x:
+    #         if i.lower() not in new_case1:
+    #             new_case1.append(i.lower())
+    #             new_case2.append(i)
+    #     return sorted(new_case1)
+    #
+    #
+    # print(sorted_ignore_case1(["ab", "db", "Cx"]))
+
+    from functools import partial
+
+    sorted_ignore_case = partial(sorted, key=lambda item: item.lower())
+    print(sorted_ignore_case(["ab", "db", "Cx"]))
+
+flag = 11
+if flag == 1:
+    ...
+    import functools
+
+    sorted_ignore_case = functools.partial(sorted, key=lambda item: item.lower())
+    print(sorted_ignore_case(['bob', 'about', 'Zoo', 'Credit']))
+
+flag = 11
+if flag == 1:
+    ...
+    students = [
+        {'name': 'Alice', 'age': 20, 'score': 90},
+        {'name': 'Bob', 'age': 19, 'score': 85},
+        {'name': 'Charlie', 'age': 21, 'score': 95}
+    ]
+
+    # 按score降序排序
+    from operator import itemgetter
+    from functools import partial
+
+    sorted_students = sorted(students, key=partial(itemgetter('score')), reverse=True)
+    print(sorted_students)
+
+flag = 11
+if flag == 1:
+    ...
+    from functools import partial
+
+
+    def power(base, exponent):
+        return base ** exponent
+
+
+    # 创建一个计算平方的函数
+    square = partial(power, exponent=2)
+    print(square(5))  # 输出: 25
+
+    # 创建一个计算立方的函数
+    cube = partial(power, exponent=3)
+    print(cube(3))  # 输出: 27
+
+flag = 11
+if flag == 1:
+    ...
+    from functools import partial
+
+    # 使用偏函数替代lambda，使代码更清晰
+    process_data = partial(
+        map,
+        lambda x: x * 2 + 1 if x % 2 == 0 else x * 3 - 1
+    )
+
+    data = [1, 2, 3, 4, 5]
+    print(list(map(lambda x: x * 2 + 1 if x % 2 == 0 else x * 3 - 1, data)))
+
+    result = list(process_data(data))
+    print(result)  # 输出: [2, 5, 8, 9, 14]
+
+flag = 11
+if flag == 1:
+    ...
+
+
+    def t1(a, b=0, c=0):
+        # print(a)
+        return a + b + c
+
+
+    # partial 只起个固定函数某些入参的功能
+    from functools import partial
+
+    n1 = partial(t1, b=1, c=2)
+    print(n1(10))
+
+    print(t1(10))
+
+flag = 1
+if flag == 1:
+    ...
+    l1 = [1, 3, 0, 5, -4, 8 ,9]
+    from functools import partial
+    m1 = partial(map, lambda x: x*2 if x>0 else None)
+    print(list(m1(l1)))
+
+    f1 = partial(filter, lambda x: x > 0)
+    print(list(f1(l1)))
+    l1 = [1, 3, 0, 5, -4, 8, -9]
+    f11 = partial(filter, lambda x:x)
+    print(list(f11(l1)))
+
+    print(list(filter(lambda x:x if x>0 else None, l1)))
+
+
+
+
+
+
+
+
+

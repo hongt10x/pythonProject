@@ -1,0 +1,14 @@
+HOST: &HOST 127.0.0.1
+URL: *HOST
+
+BAD: &dui
+  bad1: 123
+  bad2: 345
+
+GOD:
+  <<: *dui
+  mao: *HOST
+
+db:
+  port: 3306
+

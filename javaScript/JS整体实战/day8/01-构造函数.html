@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<!--script>
+    function GetSum(name, age) { //def __init__(self,name,age)
+        this.name = name
+        this.age = age
+    }
+
+    a = new GetSum("WHT", 33)
+    console.log(a.name, a.age)
+
+
+    function getSum(name, age) { //def __init__(self,name,age)
+        // this.name = name
+        // this.age = age
+        console.log(name)
+        console.log(age)
+        this.n = name
+        return this.n
+    }
+
+    b = getSum("wht", 23)
+    console.log(b)
+    console.log(b.n)
+    console.log("---------------------")
+
+    class Person {
+        constructor(name, age) {
+            this.name = name
+            this.age = age
+        }
+
+        greet() {
+            console.log(`我是${this.name},我今年${this.age}岁了`)
+        }
+    }
+
+    p = new Person("echo wang", 33)
+    console.log(p.name)
+    console.log(p)
+    p.greet()
+    console.log(typeof p.greet)
+
+
+    try {
+        const str = "test"
+        str = null
+        str = "echo wang"
+        console.log(str)
+    } catch (e) {
+        console.log(e.message)
+        console.log(e.name,e.filename,e.lineno)
+        console.log(e.stack)
+    }
+    console.log("good test")
+
+    function Pig(name) {
+        this.name = name
+    }
+
+    Pig.eyes = 2
+    console.log(Pig.eyes)
+    const pig = new Pig("小猪佩奇")
+    console.log(pig.eyes)  //undefined ： Pig.eyes属性只属于构造函数的静态属性，不属于实例
+    pig.eyes = 3
+    console.log(pig.eyes)
+
+
+    typeof function (d) {
+        console.log(d)
+    }('利用typeof')
+
+    typeof function (d) {
+        console.log(d)
+    }('')
+    console.log("===========");
+
+    // 0 + function (a) {
+    //         console.log(a)   //与数字相加变成表达式
+    //     }('与数字相加变成表达式');
+    //
+</script-->
+
+<script>
+        //1、加括号
+        (function fn2() {
+            console.log('这是一个函数声明'); //这是一个函数声明
+        })();
+
+        (function fn2() { console.log('这是一个函数声明') }());//这是一个函数声明
+
+        //两种模式
+        (function () { })();
+        (function () { }());
+
+        //2、函数变成表达式
+        0 + function (a) {
+            console.log(a)   //与数字相加变成表达式
+        }('与数字相加变成表达式');
+
+        true && function (a) {
+            console.log(a)   //1.利用逻辑运算符变成表达式
+        }('1.利用逻辑运算符变成表达式');
+
+        false || function (b) {
+            console.log(b)
+        }('2.利用逻辑运算符变成表达式') ;//2.利用逻辑运算符变成表达式
+
+        ~function (c) {
+            console.log(c)
+        }('利用+ - ！~ 变成表达式') //利用+ - ！~ 变成表达式
+
+        typeof function (d) {
+            console.log(d)
+        }('利用typeof'); //利用typeof
+
+
+         (() => console.log("xxxx"))();
+        let did;
+        console.log(did)
+        if(did) {
+            console.log("yyyy")
+        }else {
+            console.log("a hell of ")
+        }
+
+        const str = new String("pink11")
+        console.log(str, typeof str)
+
+        const str1 = "pink23"
+        console.log(str1, typeof str1)
+    </script>
+
+</body>
+</html>

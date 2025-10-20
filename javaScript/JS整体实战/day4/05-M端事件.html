@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  div {
+    height: 500px;
+    width: 500px;
+    background-color: yellow;
+  }
+</style>
+<body>
+<div></div>
+<script>
+  const div = document.querySelector("div")
+
+  div.addEventListener("touchstart",function (){
+    console.log("开始触摸")
+  })
+
+  div.addEventListener("touchend",function (){
+    console.log("结束触摸")
+  })
+
+  div.addEventListener("touchmove",function (){
+    console.log("一直触摸....")
+  })
+
+
+</script>
+</body>
+</html>

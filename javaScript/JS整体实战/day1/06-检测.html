@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+        /*合并临边*/
+        table {
+            border-collapse: collapse;
+            height: 80px;
+            margin: 10px auto;/*h w*/
+        }
+        th {
+            padding: 5px 20px; /*h w*/
+        }
+        table, tr,th {
+            border: 20px solid red;
+        }
+    </style>
+</head>
+
+<body>
+<h2>订单确认</h2>
+<!--<table>-->
+<!--    <tr>-->
+<!--        <th>商品名称</th>-->
+<!--        <th>商品价格</th>-->
+<!--        <th>商品数量</th>-->
+<!--        <th>总价</th>-->
+<!--        <th>收获地址</th>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <th>小米12 pro</th>-->
+<!--        <th>4499元</th>-->
+<!--        <th>2台</th>-->
+<!--        <th>10000元</th>-->
+<!--        <th>北京唱片</th>-->
+<!--    </tr>-->
+<!--</table>-->
+<script>
+    let price = +prompt("请输入价格")
+    let num = +prompt("请输入数量")
+    let total = price * num
+    let addr = prompt("请输入收获地址")
+    document.write(`
+        <table>
+            <tr>
+                <th>商品名称</th>
+                <th>商品价格</th>
+                <th>商品数量</th>
+                <th>总价</th>
+                <th>收获地址</th>
+            </tr>
+            <tr>
+                <th>小米12 pro</th>
+                <th>${price}元</th>
+                <th>${num}台</th>
+                <th>${total}元</th>
+                <th>${addr}</th>
+            </tr>
+        </table>
+    `)
+
+</script>
+
+</body>
+</html>

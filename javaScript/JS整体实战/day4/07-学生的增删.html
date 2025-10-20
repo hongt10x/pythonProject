@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生信息表</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input, button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>学生信息表</h1>
+
+    <div>
+        <label for="name">姓名:</label>
+<!--        <input type="text" id="name" placeholder="输入姓名" required autocomplete="on" >-->
+        <input type="text" id="name" placeholder="输入姓名" required>
+
+        <label for="age">年龄:</label>
+<!--        <input type="number" id="age" placeholder="输入年龄" required autocomplete="on" >-->
+        <input type="number" id="age" placeholder="输入年龄" required >
+
+        <button onclick="addStudent()">添加学生</button>
+    </div>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 学生信息将被动态插入到这里 -->
+        </tbody>
+    </table>
+
+    <script>
+        let studentCount = 0;
+
+        function addStudent() {
+            const name = document.getElementById('name').value.trim();
+            const age = document.getElementById('age').value.trim();
+
+            if (name === '' || age === '') {
+                alert('请填写完整的学生信息');
+                return;
+            }
+
+            studentCount++;
+
+            const tableBody = document.querySelector('#studentTable tbody');
+            const newRow = tableBody.insertRow();
+
+            const cellIndex = newRow.insertCell(0);
+            cellIndex.textContent = studentCount;
+
+            const cellName = newRow.insertCell(1);
+            cellName.textContent = name;
+
+            const cellAge = newRow.insertCell(2);
+            cellAge.textContent = age;
+
+            const cellAction = newRow.insertCell(3);
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = '删除';
+            deleteButton.onclick = function() {
+                tableBody.deleteRow(newRow.rowIndex - 1);
+            };
+            cellAction.appendChild(deleteButton);
+
+            // 清空输入框
+            document.getElementById('name').value = '';
+            document.getElementById('age').value = '';
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+[{
+	"description":"demo2=约定请求参数",
+	"request":{
+		"uri": "/demo2",
+		"queries":{
+			"key1":"abc",
+			"key2":"123"
+		  }
+		},
+	"response":{
+		"json":{"key1":"value1","key2":"value2"}
+	}
+}]

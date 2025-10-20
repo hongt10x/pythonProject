@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: #3cdc10;
+            text-align: center;
+            align-content: center;
+            font-size: 200%;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<script>
+    function getRandom(N, M) {
+        return Math.floor(Math.random() * (M - N + 1)) + N
+    }
+
+    const random = getRandom(1, 1000)
+    console.log(random)
+
+    const box = document.querySelector(".box")
+    box.style.width = '300px'
+    box.style.backgroundColor = "yellow"
+    box.style.border = "2px solid lightpink"
+    box.style.borderTop = "2px solid blue"
+    box.innerHTML = random
+
+    // 如修改div盒子样式，padding-left如何写呢？
+    // element.style.paddingLeft = '300px'
+    // 小驼峰命名法
+    // 样式属性的数字结尾都需要带单位符号
+
+
+</script>
+</body>
+</html>

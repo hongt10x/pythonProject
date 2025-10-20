@@ -1,0 +1,128 @@
+[ 
+{
+	"description":"demo1=约定URI",
+	"request":{
+		"uri":"/xintian_sq"
+		},
+	"response":{
+		"text":"Hello,sq"
+	}
+},
+{
+	"description":"demo2=约定请求参数",
+	"request":{
+		"uri":"/sq",
+		"queries":{
+			"key1":"abc",
+			"key2":"123"
+		  }
+		},
+	"response":{
+		"text":"Hello,demo2"
+	}
+},
+{
+	"description":"demo5=约定请求体参数-form",
+	"request":{
+		"uri":"/sq2",
+		"forms":{
+			"key1":"abc"
+			}
+		},
+	"response":{
+		"text":"Hello,demo3"
+	}
+},
+{
+	"description":"demo6=约定请求体参数-json",
+	"request":{
+		"uri":"/sq3",
+		"json":{
+				"key1":"value1",
+				"key2":"value2"
+			}
+		},
+	"response":{
+		"text":"Hello,demo4"
+	}
+},
+{
+	"description":"demo7=uri-startsWith匹配",
+	"request":{ 
+		"uri":{
+				"startsWith":"/xt"
+			}
+		},
+	"response":{
+		"text":"xintain"
+	}
+},
+{
+    "description":"demo13=返回json格式的数据",
+	"request":{
+		"uri":"/sq4"
+	 }, 
+	"response":{
+		"json":{"key1":"value1","key2":"value2"}
+    }
+},
+{
+	"description":"demo7=uri-startsWith匹配",
+	"request":{ 
+		"uri":{
+				"endsWith":"/gxt"
+			}
+		},
+	"response":{
+		"text":"xintain_end"
+	}
+},
+{
+    "description":"1- 提交申请接口",
+	"request":{
+		"uri":"/api/order/create/",
+		"json":{
+				"user_id":"sq001",
+				"goods_id":"1234",
+				"num":1,
+				"amount":100.8
+			}
+	 }, 
+	"response":{
+		"json":{"order_id": "6666"}
+    }
+},
+{
+	"description":"2-查询订单接口",
+	"request":{
+		"uri":"/api/order/get_result/",
+		"method":"GET",
+		"queries":{
+					"order_id": "6666"
+				}
+		},
+	"response":{
+		"status":200,
+		"json":{
+					"user_id": "sq001",
+					"goods_id": "1234",
+					"num":1,
+					"amount":100.8
+			}
+	}
+},
+{
+	"description":"自定义测试",
+	"request":{ 
+		"uri":{
+				"startsWith":"/test"
+			}
+		},
+	"response": {
+		"text": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<title>测试页面</title>\n</head>\n<body>\n\t<button onclick=\"alert('hello')\">登录</button>\n\t<p>document.write('<p>当前路径: ' + window.location.pathname + '</p>');</p>\n</body>\n</html>",
+		"headers": {
+			"Content-Type": "text/html; charset=utf-8"
+		}
+	}
+}
+]

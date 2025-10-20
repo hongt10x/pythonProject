@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+  var date = new Date()
+  // console.log(date.getDate())
+  // console.log(date)
+  // console.log(new Date(2024,11,22)) //留意月份0-11而非1-12
+  console.log(+new Date('2024-11-21 8:8:8'))  //+new的魔法方法获取时间戳
+  // console.log(date.getFullYear())
+  // console.log(date.getMonth()+1) //月份从0-11，需要+1
+  // console.log(date.getDay())
+  //
+  // console.log(date.getMilliseconds())
+  //
+  // console.log(date.valueOf()) //从现在到1970-1-1
+  console.log(date.getTime())
+
+  // var date1 = +new Date() //获取总的毫秒数
+  // console.log(date1)
+  // console.log(Date.now())  //H5新增的毫秒数
+
+
+</script>
+</body>
+</html>

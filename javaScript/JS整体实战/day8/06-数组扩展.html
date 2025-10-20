@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+
+    //自定义求数组最大值
+    const arr = [1, 2, 39]
+    console.log(arr.reverse())
+    // Array.prototype.max = function (arr) {
+    //     return Math.max(...arr)
+    // }
+    // console.log(arr.max(arr));
+
+    //arr.max(arr)无需再次传入实例对象，用this替代实例，注意不可以用箭头函数
+    Array.prototype.max = function () {
+        return Math.max(...this)
+    }
+    console.log(arr.max());
+
+
+    //自定义数组求和方法
+    Array.prototype.sum = function (){
+        return this.reduce((prev, item) => prev + item, 0)
+    }
+    console.log(arr.sum())
+</script>
+
+</body>
+</html>

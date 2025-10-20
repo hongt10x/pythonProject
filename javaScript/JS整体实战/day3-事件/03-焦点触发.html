@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        /*p {*/
+        /*    !*position: relative;*!*/
+        /*    width: 500px;*/
+        /*    height: 50px;*/
+        /*    background: green;*/
+        /*}*/
+
+        /*div {*/
+        /*    !*position: relative;*!*/
+        /*    width: 500px;*/
+        /*    height: 100px;*/
+        /*    background: blue;*/
+        /*}*/
+        a:hover,.box:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <input type="text">
+    <a href="#" alt="">鼠标移动到这里看看有什么变化吧1</a>
+
+    <div class="box">鼠标移动到这里看看有什么变化吧2</div>
+
+</div>
+<script>
+    const inp = document.querySelector("input")
+    inp.addEventListener('focus', function () {
+        console.log("有焦点触发")
+    })
+
+
+    inp.addEventListener('blur', function () {
+        console.log('失去焦点触发')
+    })
+
+    const a = document.querySelector("a")
+    // a.addEventListener("hove", () => {
+    //     console.log(123)
+    // })
+
+</script>
+</body>
+</html>

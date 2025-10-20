@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<script>
+    arr = [
+        {
+            name: '小米',
+            price: 1999
+        },
+        {
+            name: '苹果',
+            price: 3999
+        },
+        {
+            name: '华为',
+            price: 2999
+        },
+        {
+            name: '苹果',
+            price: 4999
+        },
+    ]
+
+    // const apple = arr.find(function (item,index){
+    //     console.log(index,item)
+    //     return item.name === '苹果'
+    // })
+    // console.log(apple)
+
+    //找到后，返回第一个元素的值
+    const apple = arr.find(item => item.name === "苹果")
+    console.log(apple)
+    const apple1 = arr.find(item => item.name === "苹果1")
+    console.log(apple1)
+</script>
+
+</body>
+</html>

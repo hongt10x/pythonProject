@@ -1,0 +1,18 @@
+# pip install packages
+selenium==4.3.0
+ddddocr==1.4.1
+pyyaml==6.0
+pathlib==1.0.1
+pytest==6.2.5
+allure-pytest==2.9.45
+loguru==0.6.0
+pyautogui==0.9.53
+pywinauto==0.6.8
+Pywin32==303
+pytest-base-url==1.4.2
+pytest-assume==2.4.3
+pytest-dependency==0.5.1
+pytest-ordering==0.6
+pytest-xdist==2.5.0
+pytest-repeat==0.9.1
+pytest-rerunfailures==10.2

@@ -1,0 +1,7 @@
+1、dump获取
+	a、kdump日志配置文件/etc/kdump.conf
+	b、查看path变量的位置，定位vmcore的位置;python
+
+2、获取sosreport
+	a、执行sosreport -a --batch  :python
+	b、生成路径/tmp或者/var/tmp

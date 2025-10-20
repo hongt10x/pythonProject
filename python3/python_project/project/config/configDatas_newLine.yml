@@ -1,0 +1,41 @@
+filename: 天工主机+OS+新线表.xlsx
+
+#1、要求各表数据行ip不重复，针对堡垒机表，需要提前做筛选
+update_newline: # 对 新线资产汇总 表 涉及操作
+  os:
+    sheetName: 新线资产汇总
+    update_info: [ "防护状态", "版本信息", "防病毒运行状态", "青藤云主机状态", "堡垒机纳管状态", "数据来源" ]
+  antivirus: # 4
+    sheetName: 防病毒资产
+    compare_column: 2
+    compare_datas:
+      pattern: [ "业务IP_新", "带内IP_新", "主机名_新", "操作系统" ]
+#      update_info: [ "业务IP_新", "带内IP_新", "主机名_新",  "操作系统类型", "数据来源" ]
+      update_info: [ "IP", "带内IP地址", "主机名",  "操作系统类型", "数据来源" ]
+    compare_status:
+      pattern: [ "业务IP_新", "带内IP_新", "防护状态", "版本信息", "运行状态" ]
+      update_info: [  "IP", "带内IP地址", "防护状态", "版本信息", "防病毒运行状态" ]
+      compare_logic: OR
+  bastion: # 1
+    sheetName: 堡垒机
+    compare_column: 2
+    compare_datas:
+      pattern: [ "业务IP_新", "带内IP_新", "主机名_新", "操作系统", "操作系统" ]
+      update_info: [ "IP", "带内IP地址", "主机名", "操作系统版本", "操作系统类型", "数据来源" ]
+      refer_index: 4  # 处理”操作系统类型“
+    compare_status:
+      pattern: [ "业务IP_新", "带内IP_新" ]
+      update_info: [  "IP", "带内IP地址", "堡垒机纳管状态" ]
+      compare_logic: OR
+  titan: # 2
+    sheetName: 青藤云
+    compare_column: 2
+    compare_datas:
+      pattern: [ "业务IP_新", "带内IP_新", "主机名_新", "操作系统", "操作系统" ]
+      update_info: [ "IP", "带内IP地址", "主机名", "操作系统版本", "操作系统类型", "数据来源" ]
+      refer_index: 4  # 处理”操作系统类型“
+    compare_status:
+      pattern: [ "业务IP_新", "带内IP_新",  "主机状态" ]
+      update_info: [ "IP", "带内IP地址", "青藤云主机状态" ]
+      compare_logic: OR
+

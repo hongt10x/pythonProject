@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div class="box">123</div>
+<div class="box">567</div>
+<p id="nav">导航栏</p>
+<ul>
+    <li>测试1</li>
+    <li>测试2</li>
+    <li>测试3</li>
+</ul>
+<script>
+    // let a = 0 || 10
+    // console.log(a)
+    const box = document.querySelector(".box")
+    console.log(box, typeof box, box.textContent)
+    console.log(box.innerText, typeof box.innerText)
+    const nav = document.querySelector("#nav")
+    console.log(nav, nav.textContent)
+    nav.style.color = 'red'
+    const li = document.querySelector("ul li:first-child")
+    li.style.color = 'green'
+    console.log(li, li.textContent)
+    const lis = document.querySelectorAll("ul li")
+    console.log(lis)
+    for(let i=0;i<lis.length;i++){
+        console.log(lis[i])
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<textarea name="" id="" cols="30" rows="10" placeholder="请输入"></textarea>
+<button>发布</button>
+<div></div>
+<script>
+
+    //正确引用：input.value,  textarea.value
+    const tx = document.querySelector("textarea")
+    const bt = document.querySelector("button")
+    const div = document.querySelector("div")
+    bt.addEventListener("click", function (){
+        console.log(tx.value, tx.innerHTML)//123 xxx
+
+        div.innerHTML = tx.value.replace(/激情|基情|混|坏|蛋|王/g,"**") //xxx很是***满满
+    })
+</script>
+
+</body>
+</html>

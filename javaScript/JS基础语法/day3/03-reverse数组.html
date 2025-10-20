@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function reverse(arr) {
+        var newArr = [];
+        if (arr instanceof Array) {
+            for (var i = arr.length - 1; i >= 0; i--) {
+                // console.log(newArr)
+                newArr[newArr.length] = arr[i];
+            }
+            return newArr
+        } else
+            return arguments
+
+    }
+
+    console.log(reverse([1, 3, 4]))
+    console.log(reverse(1,2,3))
+    /*
+    //检测是否为数组
+    1. instanceof
+
+     */
+    var arr = [];
+    var obj = {};
+    console.log(arr instanceof Array)
+    console.log(obj instanceof Array)
+    console.log(Array.isArray(arr))
+    console.log(Array.isArray(obj))
+</script>
+</body>
+</html>

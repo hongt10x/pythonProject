@@ -1,0 +1,9 @@
+filename: test_data_tmp.xls
+sheet_names:
+  All:
+    col_names: ['All','Linux']
+  Sheet1:
+    col_names: ['name']
+  Sheet2:
+    col_names: ['ip']
+

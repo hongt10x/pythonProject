@@ -1,0 +1,4 @@
+yaml
+xlrd == 1.2.0
+jpype1
+pycryptodome

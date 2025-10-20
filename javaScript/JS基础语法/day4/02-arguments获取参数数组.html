@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+  // function fn(){
+  //   console.log(arguments)
+  // }
+  // fn(1,3,5)
+
+  // var fun1 = function (arg){
+  //     console.log(arg)
+  // }
+  // fun1("hello");
+  //
+  //
+  // // 匿名函数调用特点
+  // (function (arg){
+  //     console.log(arg)
+  // })("goodtest");
+  //
+  // var a = 100;
+  // function test(var1){
+  //     console.log(var1)
+  // }
+  // test("alex")
+
+  var obj = {
+      age: 19,
+      name: 'alex',
+      skill: function (){
+          console.log("哭~~~")
+      },
+      newFun: laugh
+  }
+
+  function laugh(){
+      console.log("笑~~~")
+  }
+  console.log(obj.name)
+  obj.skill()
+  obj.newFun()
+</script>
+</body>
+</html>

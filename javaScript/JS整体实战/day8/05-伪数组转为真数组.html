@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<script>
+const lis = document.querySelectorAll("ul li")
+console.log(lis, typeof lis)
+console.log(Array.isArray(lis))
+// lis.pop()  //伪数组没有pop方法，报错
+
+const liss = Array.from(lis)
+console.log(Array.isArray(liss))
+console.log(liss)
+liss.pop()
+console.log(liss)
+
+const str = "今天又要做核酸了"
+console.log(str.substring(5,7)) //包头不包尾
+
+const str1 = "wht-alex-99"
+console.log(str1.split("-"))
+
+const ip = "110.3.3.10"
+console.log(ip.startsWith("11",))
+console.log(ip.startsWith("10.",))
+console.log(ip.startsWith("10.",1))
+
+</script>
+
+</body>
+</html>

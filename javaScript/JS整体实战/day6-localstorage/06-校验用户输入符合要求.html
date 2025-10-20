@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>我在测试</title>
+    <style>
+        span {
+            display: inline-block;
+            width: 250px;
+            height: 30px;
+            vertical-align: middle;
+            line-height: 30px;
+            padding-left: 15px;
+        }
+
+        .wrong {
+            color: yellow;
+            font-size: large;
+            text-align: center;
+            background: url("./images/wrong.png") no-repeat left center;
+        }
+
+        .right {
+            color: green;
+            font-size: large;
+            text-align: center;
+            background: url("./images/right.png") no-repeat left center;
+        }
+    </style>
+</head>
+<body>
+<label class="Name">请输入6~16位字符：</label>
+<input id="good" type="text">
+<span class="test"></span>
+<script>
+    lb = document.querySelector(".Name")
+    console.log(lb, lb.nextElementSibling)
+    const reg = /^[a-zA-Z0-9-_]{6,16}$/
+    let input = document.querySelector("input")
+
+    span = input.nextElementSibling
+    input.addEventListener("blur", function () {
+        // console.log(input.value)
+        // console.log(input.innerText,input.value)
+        if (reg.test(input.value)) {
+            span.className = "right"
+
+
+            // if (span.classList.contains("wrong")){
+            //     span.classList.remove("wrong")
+            // }
+
+            // span.classList.contains("wrong") ? span.classList.remove("wrong"): null
+            // span.classList.add("right")
+
+            span.innerHTML = "输入正确"
+        } else {
+            span.className = "wrong"
+
+            // if (span.classList.contains("right")){
+            //     span.classList.remove("right")
+            // }
+
+            // span.classList.contains("wrong") ? span.classList.remove("wrong"): null
+            // span.classList.add("wrong")
+
+            span.innerHTML = "输入错误"
+        }
+
+    })
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //此处报错会影响程序往下运行
+        // const btn1 = document.querySelector('button:nth-child(1)')
+        // console.log(btn1)
+        // btn1.addEventListener('click',function (){
+        //     alert("22222")
+        // })
+
+
+        //事件行为延迟加载：等待window窗口所有的资源全都加载完成才执行下面代码
+        // window.addEventListener("load",function (){
+        //     const btn = document.querySelector("button:nth-child(2)")
+        //     btn.addEventListener('click', function (){
+        //         alert("1111")
+        //     })
+        // })
+
+
+        //事件行为延迟：等待dom相关的页面标签基础资源都加载完了就可以执行（无需图片等），速度更快
+        document.addEventListener("DOMContentLoaded", function () {
+            const btn2 = document.querySelector("button:last-child")
+            console.log(btn2,btn2.innerHTML)
+
+            btn2.addEventListener("click", () => {
+                alert(123)
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="box">
+    <button>点击1</button>
+    <button>点击2</button>
+</div>
+</body>
+</html>

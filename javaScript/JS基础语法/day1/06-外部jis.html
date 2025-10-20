@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="out.js">
+        <!--    引入外部js时，script内部不能在嵌套js脚本，不执行-->
+        window.onload = function () {
+            console.log("测试")
+        }
+    </script>
+</head>
+<body>
+<h1 id="box">获取外部js</h1>
+</body>
+</html>

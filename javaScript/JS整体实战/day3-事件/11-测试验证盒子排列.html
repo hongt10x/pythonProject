@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column; /* 垂直排列 */
+            height: 500px;
+            width: 500px;
+        }
+        div {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="background-color: lightblue;">第一个 div</div>
+        <div style="background-color: lightgreen;">第二个 div</div>
+    </div>
+
+
+<script>
+    const container = document.querySelector(".container div:nth-child(1)")
+    console.log(container)
+
+    container.addEventListener("click",function (){
+        color = container.style.color
+        console.log(color)
+        container.style.color = "red"
+        setTimeout(function() {container.style.color = 'yellow'},5000)
+
+    })
+</script>
+</body>
+</html>

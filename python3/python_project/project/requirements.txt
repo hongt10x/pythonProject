@@ -1,0 +1,6 @@
+# pip install packages
+openpyxl
+pyyaml
+loguru
+configparser
+

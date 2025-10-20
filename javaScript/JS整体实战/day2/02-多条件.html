@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // let score = +prompt("请输入成绩：")
+    // console.log(score, typeof score)
+
+    // let num1 = +prompt("输入数字：")
+    // alert('0' + num1 )
+
+    // let num2 = prompt("输入数字：")
+    // alert(num2 < 10 ? 0 + num2 : num2)
+
+    // swith 的逻辑是 === ；绝对相同
+    let num3 = +prompt("请输入你的选择：")
+    switch (num3){
+        case 1: {
+            console.log("111")
+            break
+        }
+        case 2:{
+            console.log("222")
+            break
+            }
+        default:{
+            console.log("end")
+        }
+
+    }
+
+
+    let n1 = +prompt("输入一个数：")
+    let n2 = +prompt("输入二个数：")
+    let sp = prompt("请输入：+-*/")
+    console.log(sp)
+    switch (sp) {
+        case '+':
+            alert(n1 + n2)
+            break
+
+        case '-':
+            alert(n1 - n2)
+            break
+
+        case '*':
+            alert(n1 * n2)
+            break
+
+        case '/':
+            alert(n1 / n2)
+            break
+
+    }
+</script>
+</body>
+</html>

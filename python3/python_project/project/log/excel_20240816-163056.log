@@ -1,0 +1,5 @@
+2024-08-16 16:31:07,baseExcel(line:70),INFO|>>>开始将'堡垒机'中的状态信息更新到'新线资产汇总'中
+2024-08-16 16:31:09,baseExcel(line:114),INFO|<<<表'新线资产汇总'状态信息更新完毕
+2024-08-16 16:31:09,baseExcel(line:33),INFO|  -->函数update_status_from_bastion调用后，执行总耗时：2.17秒
+
+
